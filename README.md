@@ -1,36 +1,20 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+## Todo-List
+- [ ] 添加导航栏：创建一个导航组件，方便访问者浏览您的网站
+- [ ] 添加博客功能：使用 Next.js 的动态路由功能创建博客页面
+- [ ] 添加项目展示：展示您的项目和作品
+- [ ] 添加联系表单：让访问者能够联系您
+- [x] 添加暗黑模式：使用 Tailwind CSS 的暗黑模式功能
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 组件库：HeroUI
+[HeroUI（原为NextUI）](https://www.heroui.com/docs/guide/introduction)一个美观的 UI 库，专为 Next.js 设计
+**特点：**
+- 专为 Next.js 优化
+- 美观的设计
+- 暗黑模式支持
+- 可访问性良好
+- 响应式设计
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 动画库：Framer Motion
+[Framer Motion](https://github.com/motiondivision/motion#readme) 是一个功能强大的 React 动画库，它提供了一种简单而灵活的方式来为 React 组件添加动画效果
