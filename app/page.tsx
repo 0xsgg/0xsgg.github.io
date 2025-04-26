@@ -1,6 +1,4 @@
 import React from 'react';
-
-import {Button} from '@heroui/button';
 import {Avatar} from '@heroui/avatar';
 import {Badge} from '@heroui/badge';
 import {Card} from '@heroui/card';

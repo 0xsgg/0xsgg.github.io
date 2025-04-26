@@ -1,16 +1,12 @@
 'use client';
 
 import React from 'react';
-import Link from 'next/link';
-import { Navbar as HeroNavbar, NavbarBrand, NavbarContent, NavbarItem } from '@heroui/navbar';
-import { useTheme } from 'next-themes';
+import { Navbar as HeroNavbar, NavbarContent, NavbarItem } from '@heroui/navbar';
 import ThemeSwitch from '@/app/components/ThemeSwitch';
 import {Badge} from '@heroui/badge';
 import {Avatar} from '@heroui/avatar';
 
-const Navbar = () => {
-  const { theme } = useTheme();
-  
+const Navbar = () => {  
   // 添加平滑滚动函数
   const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
     e.preventDefault();
