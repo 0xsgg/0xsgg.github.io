@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Navbar as HeroNavbar, NavbarContent, NavbarItem } from '@heroui/navbar';
-import ThemeSwitch from '@/app/components/ThemeSwitch';
+import ThemeSwitch from '@/components/ThemeSwitch';
 import { Badge } from '@heroui/badge';
 import { Avatar } from '@heroui/avatar';
 import { div } from 'framer-motion/client';

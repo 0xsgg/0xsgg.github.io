@@ -1,0 +1,26 @@
+{
+  "navbar": {
+    "profile": "Profile",
+    "projects": "Projects",
+    "achievements": "Achievements",
+    "community": "Community"
+  },
+  "profile": {
+    "title": "Sggmico (Black & White)",
+    "description": "Embracing both frontend and backend technologies, open-minded, eager to learn and share. Conducted over 10 technical sharing sessions within the company and participated in external communities.",
+    "techStack": "Tech Stack",
+    "workExperience": "Work Experience"
+  },
+  "projects": {
+    "title": "Projects",
+    "difficulties": "Challenges",
+    "highlights": "Highlights",
+    "techStack": "Tech Stack"
+  },
+  "achievements": {
+    "title": "Achievements"
+  },
+  "community": {
+    "title": "Community Contributions"
+  }
+}

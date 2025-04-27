@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 import { Inter, Geist, Noto_Serif, Open_Sans } from 'next/font/google';
 import '@/styles/globals.css';
-import { ThemeProvider } from '@/app/components/ThemeProvider';
-import { HeroUIProvider } from '@/app/components/HeroUIProvider';
-import Navbar from '@/app/components/Navbar';
+import { ThemeProvider } from '@/components/ThemeProvider';
+import { HeroUIProvider } from '@/components/HeroUIProvider';
+import Navbar from '@/components/Navbar';
 
 const inter = Inter({ subsets: ['latin'] });
 const geist = Geist({ subsets: ['latin'] });

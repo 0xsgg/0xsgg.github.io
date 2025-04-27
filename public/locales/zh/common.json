@@ -1,0 +1,26 @@
+{
+  "navbar": {
+    "profile": "个人简介",
+    "projects": "项目经验",
+    "achievements": "技术成果",
+    "community": "社区贡献"
+  },
+  "profile": {
+    "title": "Sggmico （黑白灰）",
+    "description": "拥抱前后端技术，思维开放，乐于学习分享，在公司内部技术分享超过10场，也有参与外部社区。",
+    "techStack": "技术栈",
+    "workExperience": "工作经历"
+  },
+  "projects": {
+    "title": "项目经验",
+    "difficulties": "难点",
+    "highlights": "亮点",
+    "techStack": "技术栈"
+  },
+  "achievements": {
+    "title": "技术成果"
+  },
+  "community": {
+    "title": "社区贡献"
+  }
+}
