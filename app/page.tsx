@@ -12,7 +12,7 @@ const techStack = ['TypeScript', 'Nodejs', 'React+', 'Vue+', 'Solidity', 'Python
 export const workList = [{
   id: 1,
   title: '快手',
-  timerange: '2023.09 - 2023.12',
+  timerange: '2021.08 - 2024.09',
   subtitle: '前端开发工程师',
   description: '资源流量管理平台是一款基于区块链技术的流量管理平台，它可以帮助企业管理和分配流量资源，提高流量利用率和效率。',
   techStack: ['TypeScript', 'Nodejs', 'React+', 'Vue+', 'Solidity', 'Python'],
@@ -20,7 +20,7 @@ export const workList = [{
 }, {
   id: 2,
   title: '易企秀',
-  timerange: '2023.09 - 2023.12',
+  timerange: '2015.06 - 2021.03',
   subtitle: '前端开发工程师',
   description: '资源流量管理平台是一款基于区块链技术的流量管理平台，它可以帮助企业管理和分配流量资源，提高流量利用率和效率。',
   techStack: ['TypeScript', 'Nodejs', 'React+', 'Vue+', 'Solidity', 'Python'],
@@ -34,7 +34,8 @@ export const projectList = [{
   role: '主R',
   tags: [['微前端', 'secondary']],
   typeName: '平台',
-  timerange: '2023.09 - 2023.12',
+  // timerange: '2023.09 - 2023.12',
+  timerange: '',
   description: '资源流量管理平台是一款基于区块链技术的流量管理平台，它可以帮助企业管理和分配流量资源，提高流量利用率和效率。',
   difficulties: ['复杂的业务模型与数据关系', '复杂的表单处理与状态管理', '多维度的数据分析与可视化'],
   highlights: ['模块化的架构设计', '灵活的配置化设计', '可视化通用资源位配置方案'],
@@ -45,7 +46,8 @@ export const projectList = [{
   role: '主R',
   tags: [['低代码', 'danger']],
   typeName: '系统',
-  timerange: '2023.09 - 2023.12',
+  // timerange: '2023.09 - 2023.12',
+  timerange: '',
   description: '资源流量管理平台是一款基于区块链技术的流量管理平台，它可以帮助企业管理和分配流量资源，提高流量利用率和效率。',
   highlights: ['复杂的业务模型与数据关系', '复杂的表单处理与状态管理',],
   difficulties: ['模块化的架构设计', '灵活的配置化设计'],
@@ -227,7 +229,7 @@ export default function Home() {
         </Card>
       </section>
       {/* 社区贡献 */}
-      <section id="community" className="w-full py-16 px-4 md:px-8 lg:px-16 bg-gray-50 dark:bg-gray-800">
+      {/* <section id="community" className="w-full py-16 px-4 md:px-8 lg:px-16 bg-gray-50 dark:bg-gray-800">
         <Card className="w-full max-w-4xl mx-auto p-6">
           <h2 className="text-xl font-bold mb-6 dark:text-white">技术成果</h2>
           <div className="text-sm dark:text-gray-300 space-y-4">
@@ -253,7 +255,7 @@ export default function Home() {
             </div>
           </div>
         </Card>
-      </section>
+      </section> */}
     </main >
   );
 }

@@ -23,10 +23,11 @@
 ## 主题切换
 [next-themes](https://github.com/pacocoursey/next-themes#readme) 实现主题切换， next-themes 是一个用于在 Next.js 应用程序中实现主题切换的库。它提供了一种简单而灵活的方式来为应用程序添加主题切换功能。
 ## 国际化
-
-- [翻译文本托管工具：i18nexus](https://app.i18nexus.com/)
 - [YouTube：Next.js App Router with i18next](https://www.youtube.com/watch?v=J8tnD2BWY28)
-  
+    - [[code]](https://i18nexus.com/tutorials/nextjs/react-i18next)
+    - [翻译文本托管工具：i18nexus](https://app.i18nexus.com/)
+
+### [react-i18next](https://github.com/i18next/react-i18next)
 
 ### 客户端方案（国际化数据）—— 支持next静态导出模式
 在静态导出模式下实现国际化，我们需要放弃服务器端的国际化路由，转而使用客户端方法：
