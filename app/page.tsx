@@ -9,7 +9,7 @@ import { Accordion, AccordionItem, Link } from '@heroui/react';
 const techStack = ['TypeScript', 'Nodejs', 'React+', 'Vue+', 'Solidity', 'Python'];
 
 // 工作经历数据
-export const workList = [{
+const workList = [{
   id: 1,
   title: '快手',
   timerange: '2021.08 - 2024.09',
@@ -28,7 +28,7 @@ export const workList = [{
 }];
 
 // 项目经验数据
-export const projectList = [{
+const projectList = [{
   id: 1,
   title: '资源管理平台',
   role: '主R',
