@@ -27,7 +27,7 @@ const Navbar = () => {
         className="w-full items-center dark:bg-gray-900 bg-white/70 dark:bg-gray-900/70 backdrop-blur-md shadow-lg dark:shadow-gray-800/30"
       >
         <Badge color="primary" size="lg">
-          <Avatar size="lg" src="/Oxsggmico.jpg" />
+          <Avatar size="lg" src="/0xsgg.jpg" />
         </Badge>
         <NavbarContent className="flex justify-center" justify="center">
           <NavbarItem>
