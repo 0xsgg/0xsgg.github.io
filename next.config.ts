@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   /* config options here */
   output: "export",
   // 配置基础路径，这里使用仓库名称作为基础路径
-  basePath: "/resume",
+  //basePath: "/",
 
   // 禁用图片优化，因为 GitHub Pages 不支持服务端组件
   images: {
