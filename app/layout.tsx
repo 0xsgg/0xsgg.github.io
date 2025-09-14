@@ -11,7 +11,7 @@ const noto = Noto_Serif({ subsets: ['latin'] });
 const open_sans = Open_Sans({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: `0xsgg's HomePage`,
+  title: `Sggmico's HomePage`,
   description: '个人简介、技术栈、项目展示、博客、简历',
 };
 

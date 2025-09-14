@@ -44,7 +44,7 @@ export default function Home() {
           height={384}
         />
         <div className="w-auto flex flex-col justify-start px-6">
-          <h1 className="text-2xl font-bold mb-6 text-gray-600 dark:text-white mt-2">0xsgg （黑白灰）</h1>
+          <h1 className="text-2xl font-bold mb-6 text-gray-600 dark:text-white mt-2">Sggmico （黑白灰）</h1>
           <p className="text-sm text-gray-500 dark:text-gray-300 mb-4">拥抱前后端技术，思维开放，乐于学习分享，在公司内部技术分享超过10场，也有参与外部社区。</p>
 
           {/* 技术栈 */}
