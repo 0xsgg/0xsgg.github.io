@@ -2,10 +2,10 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
-  output: 'export',
-  // 如果您的网站不是部署在域名根目录，而是在子目录下，请取消下面这行的注释并修改
-  // basePath: '/repo-name',
-  
+  output: "export",
+  // 配置基础路径，这里使用仓库名称作为基础路径
+  basePath: "/resume",
+
   // 禁用图片优化，因为 GitHub Pages 不支持服务端组件
   images: {
     unoptimized: true,

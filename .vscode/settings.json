@@ -1,11 +1,17 @@
 {
-    "files.autoSave": "onFocusChange",
-    "editor.defaultFormatter": "trae.ai-code-completion",
-    "notebook.defaultFormatter": "trae.ai-code-completion",
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
-    "editor.formatOnPaste": true,
-    "editor.formatOnSave": true,
-    "notebook.formatOnSave.enabled": true
+  "files.autoSave": "onFocusChange",
+  "editor.defaultFormatter": "trae.ai-code-completion",
+  "notebook.defaultFormatter": "trae.ai-code-completion",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "notebook.formatOnSave.enabled": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

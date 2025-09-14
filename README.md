@@ -98,7 +98,7 @@ export default function LanguageSwitch() {
     );
 }
 ```
-**方案二：使用 [next-i18next](https://github.com/i18next/next-i18next) 的静态方法**
+**方案二：使用 [next-i18next](https://github.com/i18next/next-i18next) 的静态方法** 
 
 1. 安装 next-i18next 依赖
 ```bash
@@ -125,8 +125,7 @@ export default function LanguageSwitch() {
     const router = useRouter();
     const searchParams = useSearchParams();
     const [locale, setLocale] = useState('zh');
-    
-    useEffect(() => {
+   useEffect(() => {
         const lang = searchParams.get('lang') || localStorage.getItem('lang') || 'zh';
         setLocale(lang);
         localStorage.setItem('lang', lang);

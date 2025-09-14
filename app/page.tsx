@@ -5,54 +5,7 @@ import { Image } from "@heroui/image";
 import { Card } from '@heroui/card';
 import { Chip } from '@heroui/chip';
 import { Accordion, AccordionItem, Link } from '@heroui/react';
-
-const techStack = ['TypeScript', 'Nodejs', 'React+', 'Vue+', 'Solidity', 'Python'];
-
-// 工作经历数据
-const workList = [{
-  id: 1,
-  title: '快手',
-  timerange: '2021.08 - 2024.09',
-  subtitle: '前端开发工程师',
-  description: '资源流量管理平台是一款基于区块链技术的流量管理平台，它可以帮助企业管理和分配流量资源，提高流量利用率和效率。',
-  techStack: ['TypeScript', 'Nodejs', 'React+', 'Vue+', 'Solidity', 'Python'],
-  brand: '/ks_logo_mini.png',
-}, {
-  id: 2,
-  title: '易企秀',
-  timerange: '2015.06 - 2021.03',
-  subtitle: '前端开发工程师',
-  description: '资源流量管理平台是一款基于区块链技术的流量管理平台，它可以帮助企业管理和分配流量资源，提高流量利用率和效率。',
-  techStack: ['TypeScript', 'Nodejs', 'React+', 'Vue+', 'Solidity', 'Python'],
-  brand: 'eqxiu_logo_mini.png',
-}];
-
-// 项目经验数据
-const projectList = [{
-  id: 1,
-  title: '资源管理平台',
-  role: '主R',
-  tags: [['微前端', 'secondary']],
-  typeName: '平台',
-  // timerange: '2023.09 - 2023.12',
-  timerange: '',
-  description: '资源流量管理平台是一款基于区块链技术的流量管理平台，它可以帮助企业管理和分配流量资源，提高流量利用率和效率。',
-  difficulties: ['复杂的业务模型与数据关系', '复杂的表单处理与状态管理', '多维度的数据分析与可视化'],
-  highlights: ['模块化的架构设计', '灵活的配置化设计', '可视化通用资源位配置方案'],
-  techStack: ['TypeScript', 'Vue+'],
-}, {
-  id: 2,
-  title: '易企秀',
-  role: '主R',
-  tags: [['低代码', 'danger']],
-  typeName: '系统',
-  // timerange: '2023.09 - 2023.12',
-  timerange: '',
-  description: '资源流量管理平台是一款基于区块链技术的流量管理平台，它可以帮助企业管理和分配流量资源，提高流量利用率和效率。',
-  highlights: ['复杂的业务模型与数据关系', '复杂的表单处理与状态管理',],
-  difficulties: ['模块化的架构设计', '灵活的配置化设计'],
-  techStack: ['TypeScript', 'Nodejs', 'React+', 'Vue+', 'Solidity', 'Python'],
-}];
+import resume, { about, projects, workExperience, stacks } from '@/resume';
 
 // 锚点图标组件
 const AnchorIcon = () => (
@@ -96,11 +49,11 @@ export default function Home() {
 
           {/* 技术栈 */}
           <h2 className="text-base font-bold dark:text-gray-300 mb-4">技术栈</h2>
-          <p className="text-sm text-gray-500 dark:text-gray-300 mb-8">{techStack.join('  /  ')}</p>
+          <p className="text-sm text-gray-500 dark:text-gray-300 mb-8">{stacks.join('  /  ')}</p>
 
           {/* 工作经历 */}
           <h2 className="text-base font-bold dark:text-gray-300 mb-4">工作经历</h2>
-          {workList.map(work => (
+          {workExperience.map(work => (
             <div key={work.id} className="flex items-center gap-2 mb-2">
               <div className="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-300">
                 <span className="text-sm text-gray-400">-</span>
@@ -120,7 +73,7 @@ export default function Home() {
         <div className="w-full max-w-4xl mx-auto p-6">
           <h2 className="text-xl font-bold mb-6 dark:text-white">项目经验</h2>
           <Accordion isCompact selectionMode="multiple" defaultExpandedKeys={['1', '2']}>
-            {projectList.map(project => (
+            {projects.map(project => (
               <AccordionItem
                 key={project.id}
                 aria-label={project.title}
@@ -175,7 +128,7 @@ export default function Home() {
                   )}
 
                   <h3 className="text-sm font-bold my-4 text-gray-800 dark:text-gray-100">
-                    技术栈：<span className="font-normal text-gray-600 dark:text-gray-300 ">{project.techStack.join(' / ')}</span>
+                    技术栈：<span className="font-normal text-gray-600 dark:text-gray-300 ">{project.stacks.join(' / ')}</span>
                   </h3>
 
                   <div className="flex gap-2">
