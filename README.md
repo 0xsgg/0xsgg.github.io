@@ -1,35 +1,148 @@
 
+# Personal Portfolio Website
 
-## Todo-List
-- [ ] 添加导航栏：创建一个导航组件，方便访问者浏览您的网站
-- [ ] 添加博客功能：使用 Next.js 的动态路由功能创建博客页面
-- [ ] 添加项目展示：展示您的项目和作品
-- [ ] 添加联系表单：让访问者能够联系您
-- [x] 添加暗黑模式：使用 Tailwind CSS 的暗黑模式功能
+一个基于 Next.js 15 构建的个人作品集网站，支持静态导出到 GitHub Pages。
 
+## ✨ Key Features
 
-## 组件库：HeroUI
-[HeroUI（原为NextUI）](https://www.heroui.com/docs/guide/introduction)一个美观的 UI 库，专为 Next.js 设计
-**特点：**
-- 专为 Next.js 优化
-- 美观的设计
-- 暗黑模式支持
-- 可访问性良好
-- 响应式设计
+### 🎯 响应式布局设计
+- **CSS Grid 布局**：使用现代 CSS Grid 实现响应式布局
+- **移动端优先**：采用 mobile-first 设计理念
+- **断点管理**：桌面端 12 列网格，移动端单列堆叠
+- **容器约束**：最大宽度限制，合理间距设计
 
-## 动画库：Framer Motion
-[Framer Motion](https://github.com/motiondivision/motion#readme) 是一个功能强大的 React 动画库，它提供了一种简单而灵活的方式来为 React 组件添加动画效果
+### 📱 现代化 UI 组件
+- **HeroUI 组件库**：美观、可访问的 UI 组件
+- **Lucide React 图标**：一致性的图标设计
+- **主题切换**：支持亮色/暗色主题自动切换
+- **交互效果**：悬停效果和流畅过渡动画
 
-## 主题切换
-[next-themes](https://github.com/pacocoursey/next-themes#readme) 实现主题切换， next-themes 是一个用于在 Next.js 应用程序中实现主题切换的库。它提供了一种简单而灵活的方式来为应用程序添加主题切换功能。
-## 国际化
-- [YouTube：Next.js App Router with i18next](https://www.youtube.com/watch?v=J8tnD2BWY28)
-    - [[code]](https://i18nexus.com/tutorials/nextjs/react-i18next)
-    - [翻译文本托管工具：i18nexus](https://app.i18nexus.com/)
+### 🎨 设计系统
+- **色彩编码**：项目标签使用不同颜色分类
+- **字体系统**：使用 Google Fonts (Open Sans)
+- **间距规范**：统一的间距和排版规则
+- **卡片布局**：信息模块化展示
 
-### [react-i18next](https://github.com/i18next/react-i18next)
+### ⚡ 性能与 SEO
+- **静态导出**：完全静态化，适合 GitHub Pages
+- **语义化 HTML**：良好的 SEO 结构
+- **优化字体加载**：Web 字体优化
+- **无运行时依赖**：纯静态资源
 
-### 客户端方案（国际化数据）—— 支持next静态导出模式
+### 🏗️ 架构特性
+- **Next.js 15**：最新版本框架支持
+- **TypeScript**：类型安全开发
+- **Tailwind CSS**：原子化 CSS 框架
+- **组件化开发**：可复用组件设计
+
+## 📋 Project Roadmap
+
+### ✅ 已完成功能
+- [x] **响应式首页布局**：基于 CSS Grid 的现代化布局
+- [x] **主题切换系统**：亮色/暗色主题支持
+- [x] **HeroUI 集成**：现代化 UI 组件库
+- [x] **静态导出配置**：GitHub Pages 部署支持
+- [x] **字体系统**：Google Fonts 集成
+
+### 🚧 开发中功能
+- [ ] **导航栏优化**：响应式导航组件完善
+- [ ] **页面路由**：博客、项目、演讲页面
+
+### 📅 计划功能
+- [ ] **博客系统**：使用 Next.js 动态路由创建博客页面
+- [ ] **项目展示**：作品集和项目详情页面
+- [ ] **联系表单**：访客联系功能
+- [ ] **国际化支持**：中英文切换 (静态导出兼容)
+- [ ] **SEO 优化**：meta 标签和结构化数据
+- [ ] **性能监控**：Web Vitals 集成
+- [ ] **图片优化**：静态图片处理和优化
+
+### 🎯 长期目标
+- [ ] **CMS 集成**：内容管理系统集成
+- [ ] **搜索功能**：站内搜索实现
+- [ ] **评论系统**：文章评论功能
+- [ ] **RSS 订阅**：博客 RSS 支持
+- [ ] **PWA 支持**：渐进式 Web 应用
+- [ ] **微动画**：Framer Motion 动画效果
+- [ ] **暗色模式增强**：主题自定义选项
+
+---
+
+## 🛠️ 技术栈详情
+
+### 🎨 HeroUI 组件库
+[HeroUI（原为NextUI）](https://www.heroui.com/docs/guide/introduction) - 专为 Next.js 设计的现代化 UI 库
+
+**核心特性：**
+- 🚀 专为 Next.js 优化
+- 🎨 美观的设计系统
+- 🌓 原生暗黑模式支持
+- ♿ 优秀的可访问性
+- 📱 完全响应式设计
+- 🎯 TypeScript 支持
+
+### 🎬 动画系统：Framer Motion
+[Framer Motion](https://github.com/motiondivision/motion#readme) - 强大的 React 动画库
+
+**功能特点：**
+- 🌊 流畅的动画效果
+- 🎯 声明式 API 设计
+- 📱 手势交互支持
+- ⚡ 性能优化
+- 🔄 页面转场动画
+
+### 🌗 主题切换：next-themes
+[next-themes](https://github.com/pacocoursey/next-themes#readme) - Next.js 主题管理解决方案
+
+**核心功能：**
+- 🌓 自动系统主题检测
+- 💾 用户偏好持久化
+- ⚡ 零闪烁切换
+- 🎨 多主题支持
+- 📱 SSR 兼容
+
+---
+
+## 🚀 快速开始
+
+### 环境要求
+- Node.js 18+
+- pnpm 10.7.0+
+
+### 开发命令
+```bash
+# 安装依赖
+pnpm install
+
+# 启动开发服务器 (支持 Turbopack)
+pnpm dev
+
+# 构建生产版本
+pnpm build
+
+# 代码检查
+pnpm lint
+
+# 静态导出
+pnpm export
+```
+
+### 部署到 GitHub Pages
+1. 构建项目：`pnpm build`
+2. 推送到 `gh-pages` 分支
+3. 在 GitHub 仓库设置中启用 Pages
+
+---
+
+## 🌍 国际化实现方案
+
+由于项目采用静态导出模式，国际化需要使用客户端方案。详细实现文档请参考以下资源：
+
+- [Next.js App Router with i18next 教程](https://www.youtube.com/watch?v=J8tnD2BWY28)
+- [实现代码示例](https://i18nexus.com/tutorials/nextjs/react-i18next)
+- [翻译文本托管工具：i18nexus](https://app.i18nexus.com/)
+
+### 静态导出兼容的客户端方案
 在静态导出模式下实现国际化，我们需要放弃服务器端的国际化路由，转而使用客户端方法：
 
 **方案一：使用子路径结构和客户端路由**
@@ -169,9 +282,23 @@ export default function LanguageSwitch() {
 7. 修改布局文件
 8. 修改导航栏和主页内容以使用翻译
 
-实现后，您的网站将支持中英文切换，并且URL会反映当前语言（如 /zh/ 或 /en/ ）。用户可以通过语言切换按钮在中英文之间切换。
+实现后，网站将支持中英文切换，URL会反映当前语言（如 /zh/ 或 /en/）。
 
+---
 
+## 📚 参考资源
 
-## 参考站点
-- https://zhenxuan00.github.io/
+- [Anthony Fu 个人网站](https://antfu.me) - 设计灵感来源
+- [GitHub Pages 部署指南](https://docs.github.com/en/pages)
+- [Next.js 静态导出文档](https://nextjs.org/docs/app/building-your-application/deploying/static-exports)
+
+## 📄 许可证
+
+本项目采用 MIT 许可证 - 查看 [LICENSE](LICENSE) 文件了解详情。
+
+---
+
+<div align="center">
+  <p>🚀 Built with Next.js 15 | 🎨 Styled with Tailwind CSS | 💎 Powered by HeroUI</p>
+  <p>Made with ❤️ for the open source community</p>
+</div>
