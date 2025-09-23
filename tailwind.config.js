@@ -10,7 +10,18 @@ module.exports = {
   ],
   darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'text-primary': 'var(--text-primary)',
+        'text-primary-hover': 'var(--text-primary-hover)',
+        'text-secondary': 'var(--text-secondary)',
+        'text-secondary-hover': 'var(--text-secondary-hover)',
+      },
+      fontSize: {
+        '10xl': '10rem', // 自定义 10 倍超大字体
+        'tiny': '0.625rem', // 自定义极小字体
+      }
+    },
   },
   plugins: [heroui()],
 };

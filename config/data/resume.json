@@ -1,43 +1,70 @@
 {
   "basics": {
-    "name": "Anthony Fu",
-    "picture": "https://antfu.me/avatar.png",
+    "name": "Sgg Mico",
+    "picture": "https://sggmico.me/avatar.png",
     "label": "Software Engineer",
     "headline": "A ship in harbor is safe, but that is not what ships are built for.",
-    "summary": "My name is Anthony Fu, a master of computer science student and a freelance software engineer. My passion for software lies with dreaming up ideas and making them come true with elegant interfaces. I take great care in the experience, architecture, and code quality of the things I build.\n\nI am also an open-source enthusiast and maintainer. I love how collaboration and knowledge sharing happens through open-source and I am happy to see what I do could eventually feedback to the community and industry.",
-    "website": "https://antfu.me",
+    "summary": "My name is Sgg Mico, a master of computer science student and a freelance software engineer. My passion for software lies with dreaming up ideas and making them come true with elegant interfaces. I take great care in the experience, architecture, and code quality of the things I build.\n\nI am also an open-source enthusiast and maintainer. I love how collaboration and knowledge sharing happens through open-source and I am happy to see what I do could eventually feedback to the community and industry.",
+    "website": "https://sggmico.me",
     "address": "",
-    "projects_url": "https://antfu.me/projects",
-    "username": "antfu",
-    "email": "hi@antfu.me",
+    "projects_url": "https://sggmico.me/projects",
+    "username": "sggmico",
+    "email": "sggmico@gmail.com",
     "profiles": [
       {
         "network": "GitHub",
-        "username": "antfu",
-        "url": "https://github.com/antfu"
+        "username": "sggmico",
+        "url": "https://github.com/sggmico"
       },
       {
         "network": "LinkedIn",
-        "url": "https://www.linkedin.com/in/antfu",
-        "username": "antfu"
+        "url": "https://www.linkedin.com/in/sggmico",
+        "username": "sggmico"
       },
       {
         "network": "Twitter",
-        "url": "https://twitter.com/antfu7",
-        "username": "antfu7"
+        "url": "https://twitter.com/sggmico",
+        "username": "sggmico"
+      },
+      {
+        "network": "Youtube",
+        "url": "https://youtube.com/@sggmico",
+        "username": "sggmico"
       },
       {
         "network": "Instagram",
-        "username": "antfu7",
-        "url": "https://instagram.com/antfu7"
+        "username": "sggmico",
+        "url": "https://instagram.com/sggmico"
       },
       {
         "network": "Portfolio",
-        "username": "antfu.me",
-        "url": "https://antfu.me"
+        "username": "sggmico",
+        "url": "https://sggmico.github.io"
       }
     ]
   },
+  "navList": [
+    {
+      "name": "Blog",
+      "path": "/blog",
+      "blank": false
+    },
+    {
+      "name": "Projects",
+      "path": "/projects",
+      "blank": false
+    },
+    {
+      "name": "Talks",
+      "path": "/talks",
+      "blank": true
+    },
+    {
+      "name": "Sponsors",
+      "path": "/sponsors",
+      "blank": true
+    }
+  ],
   "skills": [
     {
       "keywords": ["TypeScript", "JavaScript", "Vue", "Nuxt", "Vite"],
@@ -86,7 +113,7 @@
       "name": "unocss/unocss",
       "displayName": "UnoCSS",
       "summary": "Instant on-demand atomic CSS engine.",
-      "website": "https://uno.antfu.me/",
+      "website": "https://uno.sggmico.me/",
       "githubUrl": "https://github.com/unocss/unocss",
       "primaryLanguage": "TypeScript"
     },
@@ -137,7 +164,7 @@
     {
       "company": "Open Source",
       "position": "OSS Developer",
-      "website": "https://github.com/antfu",
+      "website": "https://github.com/sggmico",
       "location": "Github",
       "isCurrentRole": true,
       "startDate": "2015-01-01",
@@ -219,7 +246,7 @@
       "publisher": "Vue London 2021",
       "website": "https://vuejslive.com/",
       "releaseDate": "2021-10-20",
-      "slides": "https://antfu.me/posts/new-ways-to-vue-london-2021",
+      "slides": "https://sggmico.me/posts/new-ways-to-vue-london-2021",
       "fullReleaseDate": {
         "year": 2021,
         "month": 10,
@@ -232,7 +259,7 @@
       "publisher": "VueDay 2021",
       "website": "https://2021.vueday.it/",
       "releaseDate": "2021-04-29",
-      "slides": "https://antfu.me/posts/composable-vue-vueday-2021",
+      "slides": "https://sggmico.me/posts/composable-vue-vueday-2021",
       "fullReleaseDate": {
         "year": 2021,
         "month": 4,
@@ -245,7 +272,7 @@
       "publisher": "Vue Beijing 2021",
       "website": "https://twitter.com/beijing_vue",
       "releaseDate": "2021-03-29",
-      "slides": "https://antfu.me/posts/vue-beijing-2021",
+      "slides": "https://sggmico.me/posts/vue-beijing-2021",
       "fullReleaseDate": {
         "year": 2021,
         "month": 3,
@@ -258,7 +285,7 @@
       "publisher": "Bingjiang Front-End Union",
       "website": "https://wemp.app/posts/5ec27920-8201-4ef2-9027-92b09b136fab",
       "releaseDate": "2020-09-26",
-      "slides": "https://antfu.me/posts/binfe-2020-zh/",
+      "slides": "https://sggmico.me/posts/binfe-2020-zh/",
       "fullReleaseDate": {
         "year": 2020,
         "month": 9,
