@@ -36,7 +36,7 @@ export default function Resume() {
                                     <Link
                                         key={index}
                                         href={profile.url}
-                                        isExternal
+                                        isExternal={profile.network.toLowerCase() != 'portfolio'}
                                         className="text-text-primary transition-colors"
                                     >
                                         {getSocialIcon(profile.network, "w-3.5 h-3.5")}
