@@ -91,7 +91,7 @@ export default function HomePage() {
 
       {/* Main Content Grid */}
       <main className="container mx-auto px-4 md:px-8 py-8">
-        <div className="space-y-8 max-w-4xl mx-auto">
+        <div className="space-y-8 max-w-2xl mx-auto">
           {/* Hero Section */}
           <section className="space-y-6">
             <div className="space-y-6">
@@ -196,7 +196,7 @@ export default function HomePage() {
           {/* Find me on Card */}
           <section className="grid gap-3">
             <h3 className="text-md font-semibold">Find me on</h3>
-            <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-8 gap-3 text-text-primary">
+            <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-3 text-text-primary">
               {
                 basics.profiles.map((profile, index) => {
                   return (
