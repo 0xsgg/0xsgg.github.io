@@ -7,16 +7,13 @@ import { useState, useEffect } from 'react';
 import { Open_Sans, Dancing_Script, Kalam, Caveat, Patrick_Hand } from 'next/font/google';
 import AnimatedLogo from '@/components/AnimatedLogo';
 import {
-  Github,
-  Twitter,
-  Linkedin,
-  ExternalLink,
   BookOpen,
   Mic,
   MapPin,
   Sun,
   Moon
 } from 'lucide-react';
+import { getSocialIcon } from '@/lib/social-icons';
 
 const dancing_script = Dancing_Script({ subsets: ['latin'] });
 
@@ -30,23 +27,6 @@ export default function HomePage() {
     setMounted(true);
   }, []);
 
-  const getIcon = (network: string) => {
-    switch (network.toLowerCase()) {
-      case 'github':
-        return <Github className="w-4 h-4" />;
-      case 'twitter':
-        return <Twitter className="w-4 h-4" />;
-      case 'linkedin':
-        return <Linkedin className="w-4 h-4" />;
-      case 'instagram':
-        return <span className="w-4 h-4 bg-gradient-to-r from-purple-500
-           + to-pink-500 text-white text-tiny rounded flex items-center justify-center font-blod">IG</span>;
-      case 'youtube':
-        return <span className="w-4 h-4 bg-red-500 text-white text-tiny rounded flex items-center justify-center font-blod">YT</span>;
-      default:
-        return <ExternalLink className="w-4 h-4" />;
-    }
-  };
 
   return (
     <div className="min-h-screen bg-background">
@@ -68,7 +48,7 @@ export default function HomePage() {
                 .map((profile, index) => {
                   return (
                     <Link key={index} href={profile.url} isExternal className="text-text-primary opacity-60 hover:opacity-100 dark:opacity-80 dark:hover:opacity-100 transition-opacity cursor-pointer">
-                      {getIcon(profile.network)}
+                      {getSocialIcon(profile.network)}
                     </Link>
                   )
                 })}
@@ -206,7 +186,7 @@ export default function HomePage() {
                       href={profile.url || "#"}
                       className="flex items-center gap-1 rounded-lg hover:bg-muted text-text-primary opacity-80 hover:opacity-100 transition-colors"
                     >
-                      {getIcon(profile.network)}
+                      {getSocialIcon(profile.network)}
                       <span className="text-sm underline underline-offset-4 decoration-dashed decoration-1">
                         {profile.network}
                       </span>

@@ -99,7 +99,17 @@
       "summary": "A blazing fast unit test framework powered by Vite.",
       "website": "https://vitest.dev/",
       "githubUrl": "https://github.com/vitest-dev/vitest",
-      "primaryLanguage": "TypeScript"
+      "primaryLanguage": "TypeScript",
+      "skills": [
+        "TypeScript",
+        "Vue",
+        "Node",
+        "MongoDB",
+        "MySQL",
+        "Serverless",
+        "Nginx",
+        "Docker"
+      ]
     },
     {
       "name": "slidevjs/slidev",
@@ -107,7 +117,8 @@
       "summary": "Presentation Slides for Developers.",
       "website": "https://sli.dev/",
       "githubUrl": "https://github.com/slidevjs/slidev",
-      "primaryLanguage": "TypeScript"
+      "primaryLanguage": "TypeScript",
+      "skills": ["TypeScript"]
     },
     {
       "name": "unocss/unocss",
@@ -115,7 +126,8 @@
       "summary": "Instant on-demand atomic CSS engine.",
       "website": "https://uno.sggmico.me/",
       "githubUrl": "https://github.com/unocss/unocss",
-      "primaryLanguage": "TypeScript"
+      "primaryLanguage": "TypeScript",
+      "skills": ["TypeScript"]
     },
     {
       "name": "vueuse/vueuse",
@@ -123,7 +135,8 @@
       "summary": "Collection of essential Vue Composition API utils.",
       "website": "https://vueuse.org/",
       "githubUrl": "https://github.com/vueuse/vueuse",
-      "primaryLanguage": "TypeScript"
+      "primaryLanguage": "TypeScript",
+      "skills": ["TypeScript"]
     },
     {
       "name": "nuxt/framework",
@@ -131,7 +144,8 @@
       "summary": "The Hybrid Vue(3) Framework.",
       "website": "https://v3.nuxtjs.org/",
       "githubUrl": "https://github.com/nuxt/framework",
-      "primaryLanguage": "TypeScript"
+      "primaryLanguage": "TypeScript",
+      "skills": ["TypeScript"]
     },
     {
       "name": "vitejs/vite",
@@ -139,7 +153,8 @@
       "summary": "Next generation frontend tooling.",
       "website": "https://vitejs.dev/",
       "githubUrl": "https://github.com/vitejs/vite",
-      "primaryLanguage": "TypeScript"
+      "primaryLanguage": "TypeScript",
+      "skills": ["TypeScript"]
     }
   ],
   "work": [
@@ -155,6 +170,7 @@
         "month": 9
       },
       "end": {},
+      "summary": "Integrated Vite into Nuxt 3 resulted in 50x faster development time.",
       "highlights": [
         "Integrated Vite into Nuxt 3 resulted in 50x faster development time.",
         "Authored `unplugin` unifing the API between Webpack and Vite.",

@@ -20,6 +20,13 @@ module.exports = {
       fontSize: {
         '10xl': '10rem', // 自定义 10 倍超大字体
         'tiny': '0.625rem', // 自定义极小字体
+      },
+      textUnderlineOffset: {
+        5: '5px',
+        6: '6px',
+        7: '7px',
+        8: '8px',
+        10: '10px',
       }
     },
   },
