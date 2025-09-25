@@ -181,7 +181,7 @@ export default function HomePage() {
                 basics.profiles.map((profile, index) => {
                   return (
                     <Link
-                      isExternal
+                      isExternal={profile.network.toLocaleLowerCase() != 'github'}
                       key={index}
                       href={profile.url || "#"}
                       className="flex items-center gap-1 rounded-lg hover:bg-muted text-text-primary opacity-80 hover:opacity-100 transition-colors"

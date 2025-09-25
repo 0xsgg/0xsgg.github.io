@@ -5,7 +5,7 @@ import { getSocialIcon } from '@/lib/social-icons'
 import { formatDateToShort, formatDateRange } from '@/lib/date-utils'
 import {
     Github,
-    ArrowUpRight
+    ArrowUpRight,
 } from 'lucide-react';
 import { Link } from '@heroui/react'
 
@@ -15,9 +15,9 @@ export default function Resume() {
     return (
         <div className="min-h-screen bg-white">
             <div className="max-w-6xl mx-auto px-8 py-12">
-                <div className="grid grid-cols-1 lg:grid-cols-10">
+                <div className="grid grid-cols-1 md:grid-cols-10">
                     {/* 左侧栏 */}
-                    <div className="lg:col-span-2">
+                    <div className="md:col-span-2">
                         <div className="text-center lg:text-left">
                             {/* 姓名和职位 */}
                             <h1 className="text-3xl text-black mb-1">
@@ -53,7 +53,7 @@ export default function Resume() {
                     </div>
 
                     {/* 右侧内容 */}
-                    <div className="lg:col-span-6">
+                    <div className="md:col-span-6">
                         {/* 关于我 */}
                         <section className="mb-8 md:mb-12">
                             <h2 className="text-md mb-4 tracking-wide">
@@ -62,33 +62,6 @@ export default function Resume() {
                             <p className="md:pl-4 text-text-primary leading-relaxed">
                                 {basics.summary}
                             </p>
-                        </section>
-
-                        {/* 技术栈 */}
-                        <section className="mb-8 md:mb-12">
-                            <h2 className="text-md mb-4 tracking-wide">
-                                <span className="bg-black text-white px-1">Stacks</span>
-                            </h2>
-                            <div className="md:pl-4 space-y-4">
-                                {skills.map((skill, index) => (
-                                    <div key={index}>
-                                        <div className="grid grid-cols-4 md:grid-cols-7 space-x-4 items-start text-md text-text-primary mb-2 ">
-                                            <span className="col-span-1 font-semibold leading-relaxed text-right">{skill.name}</span>
-                                            <p className="col-span-3 md:col-span-6 font-light leading-relaxed">
-                                                {
-                                                    skill.keywords.map((name, index) => {
-                                                        return (
-                                                            <span className="pr-2" key={index}>
-                                                                {name}{index < skill.keywords.length - 1 ? '、' : ''}
-                                                            </span>
-                                                        )
-                                                    })
-                                                }
-                                            </p>
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
                         </section>
 
                         {/* 开源项目 */}
@@ -178,6 +151,34 @@ export default function Resume() {
                                 ))}
                             </div>
                         </section>
+
+                        {/* 技术栈 */}
+                        <section className="mb-8 md:mb-12">
+                            <h2 className="text-md mb-4 tracking-wide">
+                                <span className="bg-black text-white px-1">Stacks</span>
+                            </h2>
+                            <div className="md:pl-4 space-y-4">
+                                {skills.map((skill, index) => (
+                                    <div key={index}>
+                                        <div className="grid grid-cols-4 md:grid-cols-7 space-x-4 items-start text-md text-text-primary mb-2 ">
+                                            <span className="col-span-1 font-semibold leading-relaxed text-right">{skill.name}</span>
+                                            <p className="col-span-3 md:col-span-6 font-light leading-relaxed">
+                                                {
+                                                    skill.keywords.map((name, index) => {
+                                                        return (
+                                                            <span className="pr-2" key={index}>
+                                                                {name}{index < skill.keywords.length - 1 ? '、' : ''}
+                                                            </span>
+                                                        )
+                                                    })
+                                                }
+                                            </p>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </section>
+
                         {/* 教育背景 */}
                         <section className="mb-8 md:mb-12">
                             <h2 className="text-md mb-4 tracking-wide">
