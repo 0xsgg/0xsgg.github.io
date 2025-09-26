@@ -59,9 +59,13 @@ export default function Resume() {
                             <h2 className="text-md mb-4 tracking-wide">
                                 <span className="bg-black text-white px-1">About</span>
                             </h2>
-                            <p className="md:pl-4 text-text-primary leading-relaxed">
-                                {basics.summary}
-                            </p>
+                            <div className="md:pl-4 text-text-primary leading-relaxed space-y-4">
+                                {basics.summary.split('\n\n').map((paragraph, index) => (
+                                    <p key={index}>
+                                        {paragraph.trim()}
+                                    </p>
+                                ))}
+                            </div>
                         </section>
 
                         {/* 开源项目 */}

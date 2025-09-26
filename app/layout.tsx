@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Open_Sans, Dancing_Script, Kalam, Caveat, Patrick_Hand } from 'next/font/google';
+import { Open_Sans, Dancing_Script, Kalam, Caveat, Patrick_Hand, Nunito_Sans } from 'next/font/google';
 import '@/styles/globals.css';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import { HeroUIProvider } from '@/components/HeroUIProvider';
@@ -9,6 +9,7 @@ const dancing_script = Dancing_Script({ subsets: ['latin'] });
 const kalam = Kalam({ subsets: ['latin'], weight: ['300', '400', '700'] });
 const caveat = Caveat({ subsets: ['latin'] });
 const patrick_hand = Patrick_Hand({ subsets: ['latin'], weight: ['400'] });
+const nunito_sans = Nunito_Sans({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
     title: `Sggmico`,
@@ -25,7 +26,7 @@ export default function RootLayout({
         // <html lang="zh" suppressHydrationWarning className='dark'>
         <html lang="zh" suppressHydrationWarning>
             {/* <body className={`${open_sans.className} ${dancing_script.className} ${kalam.className} ${caveat.className} ${patrick_hand.className}`}> */}
-            <body className={`${open_sans.className}`}>
+            <body className={`${nunito_sans.className}`}>
                 <HeroUIProvider>
                     <ThemeProvider>
                         {children}
