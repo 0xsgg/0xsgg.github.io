@@ -4,7 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build",
+    "build": "npm run build:static && npm run generate-pdf",
+    "build:static": "next build && npm run fix-css-paths",
+    "fix-css-paths": "node scripts/fix-css-paths.js",
+    "generate-pdf": "node scripts/generate-pdf.js",
     "start": "next start",
     "lint": "next lint",
     "export": "next export"
@@ -20,6 +23,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@sparticuz/chromium": "^138.0.2",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
@@ -30,6 +34,7 @@
     "husky": "^9.1.7",
     "lint-staged": "^15.5.1",
     "prettier": "^3.5.3",
+    "puppeteer-core": "^24.22.3",
     "tailwindcss": "3.4",
     "typescript": "^5"
   },

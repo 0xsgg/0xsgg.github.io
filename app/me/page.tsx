@@ -68,93 +68,95 @@ export default function Resume() {
                             </div>
                         </section>
 
-                        {/* 开源项目 */}
-                        <section className="mb-8 md:mb-12">
-                            <h2 className="text-md mb-4 tracking-wide">
-                                <span className="bg-black text-white px-1">Projects</span>
-                            </h2>
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:pl-4">
-                                {projects.map((project, index) => (
-                                    <div key={index} className="text-text-primary">
-                                        <h3 className="flex items-center gap-2 font-semibold text-md text-text-primary mb-2">
-                                            <span className="mr-2">{project.displayName}</span>
-                                            {project.githubUrl && (
-                                                <Link href={project.githubUrl} isExternal className="text-text-primary opacity-60 hover:opacity-100 text-md">
-                                                    <Github className="w-4 h-4" />
-                                                </Link>
-                                            )}
-                                            {project.website && (
-                                                <Link href={project.website} isExternal className="text-text-primary opacity-60 hover:opacity-100 text-md">
-                                                    <ArrowUpRight className="w-4 h-4" />
-                                                </Link>
-                                            )}
+                        <div id='work-projects-group'>
+                            {/* 开源项目 */}
+                            <section className="mb-8 md:mb-12">
+                                <h2 className="text-md mb-4 tracking-wide">
+                                    <span className="bg-black text-white px-1">Projects</span>
+                                </h2>
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:pl-4">
+                                    {projects.map((project, index) => (
+                                        <div key={index} className="text-text-primary">
+                                            <h3 className="flex items-center gap-2 font-semibold text-md text-text-primary mb-2">
+                                                <span className="mr-2">{project.displayName}</span>
+                                                {project.githubUrl && (
+                                                    <Link href={project.githubUrl} isExternal className="text-text-primary opacity-60 hover:opacity-100 text-md">
+                                                        <Github className="w-4 h-4" />
+                                                    </Link>
+                                                )}
+                                                {project.website && (
+                                                    <Link href={project.website} isExternal className="text-text-primary opacity-60 hover:opacity-100 text-md">
+                                                        <ArrowUpRight className="w-4 h-4" />
+                                                    </Link>
+                                                )}
 
-                                        </h3>
-                                        <p className="text-gray-500 mb-2 text-sm">
-                                            {project.summary}
-                                        </p>
-                                        <div className="flex justify-start items-start text-xs">
-                                            <span className="font-medium leading-relaxed">Skills：</span>
-                                            <span className="font-light leading-relaxed">
-                                                {project.skills.join('、')}
-                                            </span>
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-                            <p className="flex items-center justify-start mt-8 md:pl-4">
-                                <Link href="/projects" isExternal className="text-text-primary opacity-60 hover:opacity-80 underline underline-offset-5 decoration-dashed decoration-1 decoration-gray-400 text-sm">
-                                    More Projects
-                                    <ArrowUpRight className="w-4 h-4 ml-1" />
-                                </Link>
-                            </p>
-
-                        </section>
-
-                        {/* 工作经历 */}
-                        <section className="mb-8 md:mb-12">
-                            <h2 className="text-md mb-4 tracking-wide">
-                                <span className="bg-black text-white px-1">Work Experience</span>
-                            </h2>
-                            <div className="space-y-8 md:pl-4">
-                                {work.map((job, index) => (
-                                    <div key={index} className="text-text-primary text-sm">
-                                        <div className="flex justify-between items-start mb-2">
-                                            <div>
-                                                <h3 className="flex flex-wrap items-center gap-3 text-md font-semibold mb-1">
-                                                    <Link href={job.website} isExternal className="text-text-primary hover:opacity-100 hover:text-black underline underline-offset-4 decoration-dashed decoration-1">{job.company}</Link>
-                                                    <span className="font-light opacity-90">{job.position}</span>
-                                                </h3>
-                                                <div className="flex flex-wrap items-center gap-2 text-xs opacity-80">
-                                                    <span>
-                                                        {formatDateToShort(job.startDate)} -  {
-                                                            job.isCurrentRole || !job.endDate ? 'Present' : formatDateToShort(job.endDate)
-                                                        }
-                                                    </span>
-                                                    <span>|</span>
-                                                    <span>{job.location}</span>
-                                                </div>
+                                            </h3>
+                                            <p className="text-gray-500 mb-2 text-sm">
+                                                {project.summary}
+                                            </p>
+                                            <div className="flex justify-start items-start text-xs">
+                                                <span className="font-medium leading-relaxed">Skills：</span>
+                                                <span className="font-light leading-relaxed">
+                                                    {project.skills.join('、')}
+                                                </span>
                                             </div>
                                         </div>
-                                        {job.summary && (
-                                            <p className="font-semibold mb-3 italic">
-                                                {job.summary}
-                                            </p>
-                                        )}
-                                        {job.highlights && (
-                                            <ul className="space-y-1 ml-4">
-                                                {job.highlights.map((highlight, hIndex) => (
-                                                    <li key={hIndex} className="flex items-start">
-                                                        <span className="mr-2 mt-2 w-1.5 h-1.5 border border-black rounded-full flex-shrink-0"></span>
-                                                        <span>{highlight}</span>
-                                                    </li>
-                                                ))}
-                                            </ul>
-                                        )}
-                                    </div>
-                                ))}
-                            </div>
-                        </section>
+                                    ))}
+                                </div>
+                                <p className="flex items-center justify-start mt-8 md:pl-4">
+                                    <Link href="/projects" isExternal className="text-text-primary opacity-60 hover:opacity-80 underline underline-offset-5 decoration-dashed decoration-1 decoration-gray-400 text-sm">
+                                        More Projects
+                                        <ArrowUpRight className="w-4 h-4 ml-1" />
+                                    </Link>
+                                </p>
+
+                            </section>
+
+                            {/* 工作经历 */}
+                            <section className="mb-8 md:mb-12">
+                                <h2 className="text-md mb-4 tracking-wide">
+                                    <span className="bg-black text-white px-1">Work Experience</span>
+                                </h2>
+                                <div className="space-y-8 md:pl-4">
+                                    {work.map((job, index) => (
+                                        <div key={index} className="text-text-primary text-sm">
+                                            <div className="flex justify-between items-start mb-2">
+                                                <div>
+                                                    <h3 className="flex flex-wrap items-center gap-3 text-md font-semibold mb-1">
+                                                        <Link href={job.website} isExternal className="text-text-primary hover:opacity-100 hover:text-black underline underline-offset-4 decoration-dashed decoration-1">{job.company}</Link>
+                                                        <span className="font-light opacity-90">{job.position}</span>
+                                                    </h3>
+                                                    <div className="flex flex-wrap items-center gap-2 text-xs opacity-80">
+                                                        <span>
+                                                            {formatDateToShort(job.startDate)} -  {
+                                                                job.isCurrentRole || !job.endDate ? 'Present' : formatDateToShort(job.endDate)
+                                                            }
+                                                        </span>
+                                                        <span>|</span>
+                                                        <span>{job.location}</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {job.summary && (
+                                                <p className="font-semibold mb-3 italic">
+                                                    {job.summary}
+                                                </p>
+                                            )}
+                                            {job.highlights && (
+                                                <ul className="space-y-1 ml-4">
+                                                    {job.highlights.map((highlight, hIndex) => (
+                                                        <li key={hIndex} className="flex items-start">
+                                                            <span className="mr-2 mt-2 w-1.5 h-1.5 border border-black rounded-full flex-shrink-0"></span>
+                                                            <span>{highlight}</span>
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                            )}
+                                        </div>
+                                    ))}
+                                </div>
+                            </section>
+                        </div>
 
                         {/* 技术栈 */}
                         <section className="mb-8 md:mb-12">
@@ -278,6 +280,22 @@ export default function Resume() {
                                 ))}
                             </div>
                         </section> */}
+
+                        <section className="grid items-center justify-center">
+                            <div className="text-center no-print text-sm mt-2">
+                                <Link href="/resume.pdf" className="text-text-primary opacity-80 hover:opacity-100 underline underline-offset-4 decoration-dashed decoration-1" isExternal>
+                                    PDF Version
+                                </Link>
+                            </div>
+                            <div className="text-center print-only text-sm mt-2">
+                                <Link href="/resume" className="text-text-primary opacity-80 hover:opacity-100 underline underline-offset-4 decoration-dashed decoration-1" isExternal>
+                                    Online Version
+                                </Link>
+                            </div>
+                            <div className="text-center opacity-70 text-xs mt-1">
+                                Last updated at {new Date().toLocaleDateString()}
+                            </div>
+                        </section>
                     </div>
                 </div>
             </div>
