@@ -33,7 +33,7 @@ function processDirectory(dirPath) {
 
     if (file.isDirectory()) {
       processDirectory(fullPath);
-    } else if (file.name === "me.html") {
+    } else if (file.name === "resume.html") {
       fixCssPathsInHtml(fullPath);
     }
   }

@@ -20,7 +20,7 @@ export default function RootLayout({
         // 添加了 suppressHydrationWarning 属性，这是为了避免 Next.js 在客户端和服务器端渲染不匹配时发出警告
         // <html lang="zh" suppressHydrationWarning className='dark'>
         <html lang="zh" suppressHydrationWarning>
-            <body className={`${nunito_sans.className}`}>
+            <body className={`${nunito_sans.className} text-md`}>
                 <HeroUIProvider>
                     <ThemeProvider>
                         {children}

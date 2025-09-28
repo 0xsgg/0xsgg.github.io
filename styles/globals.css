@@ -69,25 +69,20 @@
     box-shadow: none !important;
   }
 
+  html {
+    font-size: 10pt;
+  }
+
   body {
-    /* font-family: 'Open Sans', sans-serif !important;
-    font-size: 11pt !important;
-    line-height: 1.4 !important;
-    color: #171717 !important;
-    background: white !important; */
+    /* font-size: 10pt; */
   }
 
   .no-print {
-    display: none !important;
+    display: none;
   }
 
   .print-only {
-    display: block !important;
-  }
-
-  #work-projects-group {
-    /* display: block !important;
-    page-break-inside: avoid; */
+    display: block;
   }
 
 }

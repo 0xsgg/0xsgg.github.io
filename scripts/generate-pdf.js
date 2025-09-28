@@ -135,7 +135,7 @@ async function generatePDF() {
     });
 
     // 检查简历页面是否存在 - Next.js 13+ 会将页面直接输出为 me.html
-    const resumeFilePath = path.join(outDir, "me.html");
+    const resumeFilePath = path.join(outDir, "resume.html");
     if (!fs.existsSync(resumeFilePath)) {
       console.error("❌ Resume page not found at:", resumeFilePath);
       console.log("Available files:", fs.readdirSync(outDir));
@@ -162,6 +162,7 @@ async function generatePDF() {
     //       body {
     //         -webkit-print-color-adjust: exact !important;
     //         color-adjust: exact !important;
+    //         font-size: 10pt !important;
     //       }
 
     //       .no-print {
@@ -171,10 +172,6 @@ async function generatePDF() {
     //       * {
     //         box-shadow: none !important;
     //       }
-    //     }
-
-    //     body {
-    //       background: white !important;
     //     }
     //   `,
     // });

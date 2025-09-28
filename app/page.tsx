@@ -179,19 +179,20 @@ export default function HomePage() {
             <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-3 text-text-primary">
               {
                 basics.profiles.map((profile, index) => {
-                  return (
+                  const Icon = getSocialIcon(profile.network);
+                  return Icon ? (
                     <Link
                       isExternal={profile.network.toLocaleLowerCase() != 'github'}
                       key={index}
                       href={profile.url || "#"}
                       className="flex items-center gap-1 rounded-lg hover:bg-muted text-text-primary opacity-80 hover:opacity-100 transition-colors"
                     >
-                      {getSocialIcon(profile.network)}
+                      {Icon}
                       <span className="text-sm underline underline-offset-4 decoration-dashed decoration-1">
                         {profile.network}
                       </span>
                     </Link>
-                  )
+                  ) : ''
                 })
               }
             </div>
