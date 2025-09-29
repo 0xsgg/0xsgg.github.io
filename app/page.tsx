@@ -1,19 +1,12 @@
 
 'use client';
 
-import { Card, CardBody, CardHeader, Link, Button, Chip } from '@heroui/react';
+import { Link, Chip } from '@heroui/react';
 import { useTheme } from 'next-themes';
 import { useState, useEffect } from 'react';
-import { Open_Sans, Dancing_Script, Kalam, Caveat, Patrick_Hand } from 'next/font/google';
+import { Dancing_Script } from 'next/font/google';
 import AnimatedLogo from '@/components/AnimatedLogo';
-import {
-  BookOpen,
-  Mic,
-  MapPin,
-  Sun,
-  Moon
-} from 'lucide-react';
-import { getSocialIcon } from '@/lib/social-icons';
+import { getCommonIcon, getSocialIcon } from '@/lib/icons';
 
 const dancing_script = Dancing_Script({ subsets: ['latin'] });
 
@@ -44,7 +37,7 @@ export default function HomePage() {
             </nav>
             <div className="flex items-center space-x-3">
               {basics.profiles
-                .filter(profile => ['github', 'linkedin', 'twitter'].includes(profile.network.toLowerCase()))
+                .filter(profile => ['github', 'twitter', 'youtube'].includes(profile.network.toLowerCase()))
                 .map((profile, index) => {
                   return (
                     <Link key={index} href={profile.url} isExternal className="text-text-primary opacity-60 hover:opacity-100 dark:opacity-80 dark:hover:opacity-100 transition-opacity cursor-pointer">
@@ -58,9 +51,9 @@ export default function HomePage() {
                   onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
                 >
                   {theme === 'dark' ? (
-                    <Sun className="w-4 h-4" />
+                    getCommonIcon('sun')
                   ) : (
-                    <Moon className="w-4 h-4" />
+                    getCommonIcon('moon')
                   )}
                 </button>
               )}
@@ -132,7 +125,7 @@ export default function HomePage() {
             <p>
               I give talks and write{' '}
               <Link href="#" className="text-text-primary hover:text-text-primary-hover inline-flex items-center gap-1">
-                blog posts <BookOpen className="w-4 h-4" />
+                blog posts
               </Link>{' '}
               about open source, coding, etc. Occasionally, I do live coding streams on{' '}
               <Link href="#" className="text-text-primary hover:text-text-primary-hover">
@@ -140,7 +133,7 @@ export default function HomePage() {
               </Link>{' '}
               and 哔哩哔哩. I am also co-hosting a podcast{' '}
               <Link href="#" className="text-text-primary hover:text-text-primary-hover italic inline-flex items-center gap-1">
-                No Coding Today <Mic className="w-4 h-4" />
+                No Coding Today
               </Link>{' '}
               (in Mandarin), talking about various topics around programming. From time to
               time, I make some generative-art, interactivity experiments on{' '}
@@ -165,7 +158,6 @@ export default function HomePage() {
             <p className="flex items-center gap-2">
               I recently moved to{' '}
               <span className="inline-flex items-center gap-1 text-foreground">
-                <MapPin className="w-4 h-4" />
                 <span className="text-sm bg-muted px-1 rounded">Tokyo</span>
                 东京
               </span>, if you are around, please reach out and let&apos;s have some
