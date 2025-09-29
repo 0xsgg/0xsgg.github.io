@@ -4,7 +4,11 @@ import '@/styles/globals.css';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import { HeroUIProvider } from '@/components/HeroUIProvider';
 
-const nunito_sans = Nunito_Sans({ subsets: ['latin'] })
+const nunito_sans = Nunito_Sans({
+  subsets: ['latin'],
+  variable: '--font-nunito-sans',
+  display: 'swap'
+})
 
 export const metadata: Metadata = {
     title: `Sggmico`,
