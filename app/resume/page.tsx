@@ -66,34 +66,35 @@ export default function Resume() {
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:pl-4 print:pl-4">
                                 {projects.map((project, index) => (
                                     <div key={index} className="text-text-primary">
-                                        <h3 className="flex items-center gap-2 text-md font-semibold text-text-primary mb-2">
-                                            <span className="mr-2">{project.displayName}</span>
-                                            {project.githubUrl && (
-                                                <Link href={project.githubUrl} isExternal className="text-md text-text-primary opacity-80 hover:opacity-100">
-                                                    {getSocialIcon('github')}
-                                                </Link>
-                                            )}
-                                            {project.website && (
-                                                <Link href={project.website} isExternal className="text-mdtext-text-primary opacity-80 hover:opacity-100">
-                                                    {getCommonIcon('arrowUpRight')}
-                                                </Link>
-                                            )}
-
+                                        <h3 className="flex items-center gap-4 text-md font-bold text-text-primary mb-2">
+                                            <span>{project.displayName}</span>
+                                            <div className="flex items-center gap-2 mb-[0.06em] print:mb-[0.4em]">
+                                                {project.githubUrl && (
+                                                    <Link href={project.githubUrl} isExternal className="text-md text-text-primary opacity-80 hover:opacity-100 transition-opacity">
+                                                        {getSocialIcon('github')}
+                                                    </Link>
+                                                )}
+                                                {project.website && (
+                                                    <Link href={project.website} isExternal className="text-md text-text-primary opacity-80 hover:opacity-100 transition-opacity">
+                                                        {getCommonIcon('arrowUpRight')}
+                                                    </Link>
+                                                )}
+                                            </div>
                                         </h3>
                                         <p className="opacity-80 mb-2 text-sm">
                                             {project.summary}
                                         </p>
-                                        <div className="flex justify-start items-start opacity-80 text-xs">
-                                            <span className="font-medium leading-relaxed">Skills：</span>
+                                        <div className="flex justify-start items-start space-x-2 opacity-80 text-xs">
+                                            <span className="font-bold leading-relaxed">Skills: </span>
                                             <span className="leading-relaxed">
-                                                {project.skills.join('、')}
+                                                {project.skills.join(', ')}
                                             </span>
                                         </div>
                                     </div>
                                 ))}
                             </div>
-                            <p className="flex items-center justify-start mt-8 md:pl-4">
-                                <Link href="/projects" isExternal className="text-text-primary opacity-60 hover:opacity-80 underline underline-offset-5 decoration-dashed decoration-1 decoration-gray-400">
+                            <p className="flex items-center justify-start mt-8 md:pl-4 print:pl-4">
+                                <Link href="/projects" isExternal className="text-text-primary opacity-80 hover:opacity-100 underline underline-offset-5 decoration-dashed decoration-1 decoration-gray-400 transition-opacity">
                                     More Projects &nbsp;
                                     {getCommonIcon('arrowUpRight')}
                                 </Link>
@@ -111,7 +112,7 @@ export default function Resume() {
                                     <div key={index} className="text-text-primary text-md">
                                         <div className="flex flex-col mb-2">
                                             <h3 className="flex flex-wrap items-center gap-3 text-md font-bold mb-2">
-                                                <Link href={job.website} isExternal className="text-md text-text-primary hover:text-black hover:opacity-100 underline underline-offset-4 decoration-dashed decoration-1">{job.company}</Link>
+                                                <Link href={job.website} isExternal className="text-md text-text-primary hover:text-black hover:opacity-100 underline underline-offset-4 decoration-dashed decoration-1 transition-colors">{job.company}</Link>
                                                 <span className="font-light">{job.position}</span>
                                             </h3>
                                             <div className="flex flex-wrap items-center gap-2 text-sm opacity-80">
@@ -133,7 +134,7 @@ export default function Resume() {
                                             <ul className="space-y-1 ml-4">
                                                 {job.highlights.map((highlight, hIndex) => (
                                                     <li key={hIndex} className="flex items-top gap-2">
-                                                        <span className="mt-[9px] w-1.5 h-1.5 border border-black rounded-full flex-shrink-0"></span>
+                                                        <span className="mt-[0.54em] w-1.5 h-1.5 border border-black rounded-full flex-shrink-0 print:mt-[0.44em]"></span>
                                                         <span>{highlight}</span>
                                                     </li>
                                                 ))}
@@ -154,13 +155,13 @@ export default function Resume() {
                             {skills.map((skill, index) => (
                                 <div key={index}>
                                     <div className="grid grid-cols-[80px_1fr] gap-5 items-baseline text-md text-text-primary mb-2">
-                                        <span className="text-right font-semibold leading-relaxed whitespace-nowrap">{skill.name}</span>
-                                        <p className="font-light leading-relaxed">
+                                        <span className="text-right font-bold leading-relaxed whitespace-nowrap">{skill.name}</span>
+                                        <p className="leading-relaxed">
                                             {
                                                 skill.keywords.map((name, index) => {
                                                     return (
                                                         <span className="pr-2" key={index}>
-                                                            {name}{index < skill.keywords.length - 1 ? '、' : ''}
+                                                            {name}{index < skill.keywords.length - 1 ? ', ' : ''}
                                                         </span>
                                                     )
                                                 })
@@ -180,10 +181,10 @@ export default function Resume() {
                         {education.map((edu, index) => (
                             <div key={index} className="mb-4 md:pl-4 print:pl-4 text-text-primary">
                                 <div className="flex flex-wrap items-center gap-1 text-text-primary text-md mb-1">
-                                    <span className="font-semibold">
+                                    <span className="font-bold">
                                         {edu.area}, {edu.studyType},
                                     </span>
-                                    <span className="font-light">
+                                    <span>
                                         {edu.institution}
                                     </span>
                                 </div>
@@ -201,8 +202,8 @@ export default function Resume() {
                         <div className="flex flex-wrap items-center gap-1 text-text-primary md:pl-4 print:pl-4">
                             {languages.map((language, index) => (
                                 <div key={index} className="flex items-center">
-                                    <span className="font-semibold">{language.language}</span>
-                                    <span className="font-light ml-1">({language.fluency})</span>
+                                    <span className="font-bold">{language.language}</span>
+                                    <span className="ml-1">({language.fluency})</span>
                                     {index !== languages.length - 1 && <span className="ml-1">,</span>}
                                 </div>
                             ))}
@@ -212,12 +213,12 @@ export default function Resume() {
                     {/* 切换入口 */}
                     <section className="grid items-center justify-center">
                         <div className="text-center no-print text-sm mt-2 mb-2">
-                            <Link href="/resume.pdf" className="text-text-primary opacity-80 hover:opacity-100 underline underline-offset-4 decoration-dashed decoration-1" isExternal>
+                            <Link href="/resume.pdf" className="text-text-primary opacity-80 hover:opacity-100 underline underline-offset-4 decoration-dashed decoration-1 transition-opacity" isExternal>
                                 PDF Version
                             </Link>
                         </div>
                         <div className="text-center print-only text-sm mt-2 mb-2">
-                            <Link href="/resume" className="text-text-primary opacity-80 hover:opacity-100 underline underline-offset-4 decoration-dashed decoration-1" isExternal>
+                            <Link href="/resume" className="text-text-primary opacity-80 hover:opacity-100 underline underline-offset-4 decoration-dashed decoration-1 transition-opacity" isExternal>
                                 Online Version
                             </Link>
                         </div>

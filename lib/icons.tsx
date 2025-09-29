@@ -11,11 +11,11 @@ export interface SocialIconProps {
 export const getCommonIcon = (name: string, className = "w-4 h-4") => {
   switch (name.toLowerCase()) {
     case 'sun':
-      return <PiSunLight />
+      return <PiSunLight className={className} />
     case 'moon':
-      return <PiMoonLight />
+      return <PiMoonLight className={className} />
     case 'arrowupright':
-      return <TbArrowUpRight />
+      return <TbArrowUpRight className={className} />
     default:
       return null;
   }
