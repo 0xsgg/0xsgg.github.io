@@ -73,10 +73,10 @@ async function generatePDF() {
     }
 
     // 启动本地静态文件服务器
-    // console.log("🌐 Starting local server...");
-    // const { server, port } = await createStaticServer(outDir);
-    // staticServer = server;
-    // console.log(`📡 Local server running on port ${port}`);
+    console.log("🌐 Starting local server...");
+    const { server, port } = await createStaticServer(outDir);
+    staticServer = server;
+    console.log(`📡 Local server running on port ${port}`);
 
     // 启动浏览器 - 在 macOS 开发环境中使用系统 Chrome
     console.log("🔧 Launching browser...");
@@ -143,8 +143,8 @@ async function generatePDF() {
     }
 
     // 使用本地HTTP服务器URL而不是file://协议
-    // const resumeUrl = `http://localhost:${port}/me.html`;
-    const resumeUrl = `file://${resumeFilePath}`;
+    const resumeUrl = `http://localhost:${port}/resume.html`;
+    // const resumeUrl = `file://${resumeFilePath}`;
     console.log("📄 Loading resume page:", resumeUrl);
 
     await page.goto(resumeUrl, {

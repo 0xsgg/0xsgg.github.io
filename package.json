@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "npm run build:static && npm run generate-pdf",
-    "build:static": "next build && npm run fix-css-paths",
+    "build:static": "next build",
     "fix-css-paths": "node scripts/fix-css-paths.js",
     "generate-pdf": "node scripts/generate-pdf.js",
     "start": "next start",
