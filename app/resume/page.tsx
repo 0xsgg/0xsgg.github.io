@@ -1,6 +1,6 @@
 'use client';
 import { Link } from '@heroui/react'
-import resumeData from '@/config/data/resume.json'
+import resumeData from '@/config/data/resume-zh.json'
 import { getCommonIcon, getSocialIcon } from '@/lib/icons'
 import { formatDateToShort, formatDateRange, formatDateToDetailed } from '@/lib/date-utils'
 
@@ -48,7 +48,7 @@ export default function Resume() {
                         <h2 className="text-md mb-5 tracking-wide">
                             <span className="font-bold bg-black text-white pl-1 pr-3 py-[1px]">About</span>
                         </h2>
-                        <div className="md:pl-4 print:pl-4 text-text-primary opacity-90 leading-relaxed space-y-4">
+                        <div className="md:pl-4 print:pl-4 text-text-primary opacity-90 leading-relaxed space-y-4 text-sm">
                             {basics.summary.split('\n\n').map((paragraph, index) => (
                                 <p key={index}>
                                     {paragraph.trim()}

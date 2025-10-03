@@ -29,6 +29,7 @@ yarn-error.log*
 
 # local files
 *.local*
+*-temp*
 
 # local env files
 .env*.local

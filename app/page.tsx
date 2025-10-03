@@ -10,7 +10,7 @@ import { getCommonIcon, getSocialIcon } from '@/lib/icons';
 
 const dancing_script = Dancing_Script({ subsets: ['latin'] });
 
-import { basics, navList } from "@/config/data/resume.json"
+import { basics, navList } from "@/config/data/resume-en.json"
 
 export default function HomePage() {
   const [mounted, setMounted] = useState(false);

@@ -1,0 +1,378 @@
+{
+  "basics": {
+    "name": "Sgg Mico",
+    "picture": "https://sggmico.me/avatar.png",
+    "label": "Software Engineer",
+    "headline": "A ship in harbor is safe, but that is not what ships are built for.",
+    "summary": "Hi，我是 sggmico，一名前端开发工程师，并且一直在努力提升自己，争取成为一名全栈 Web3 开发工程师。\n\n10+年前端开发经验，3+年大型互联网公司开发经验，前端基础扎实，熟悉Web开发体系架构，熟练掌握前端常用开发框架和开源Libs。\n\n2+年Web3参与和开发经验，了解区块链基础原理，熟悉Ethereum技术，对去中心化技术以及数字资产有深度的理解。熟练使用Solidity进行智能合约的开发，掌握智能合约的开发、调试、测试、部署和维护。了解ERC20，ERC721，ERC1155等合约标准，熟悉OpenZeppelin等第三方安全合约库，对区块链安全有认知和经验。参与过NFT生态，有NFT发行经验，熟悉掌握NFT图片生成、筛选、稀有度处理、智能合约上架交易所流程。\n\n具备敏捷项目管理与开发能力，通过自动化测试、Code Review、静态代码扫描等手段来保障代码质量，实践主干开发、持续交付等来完成项目的高效、高质量迭代。善于分析和拆解复杂问题，变为可实现的技术方案，善于技术攻坚。思维活跃，执行力强，喜欢探索，善于用技术去解决问题，喜欢将繁杂的日常重复工作通过程序自动化。\n\n作为热衷于界面和网站开发的开发者。我热爱创造用户友好且富有创意的数字体验，喜欢通过代码将新想法变为现实，并且认为最好的产品既要易于使用，又要美观耐看，因此我在开发的每一个项目中都会努力寻求这种平衡。\n\n另外，我以化繁为简、打造用户喜爱的界面为荣。除了日常工作，我还积极参与开源社区，为那些我感兴趣且能帮助其他开发者的项目贡献力量。不编码的时候，我喜欢关注最新的技术趋势，尝试新的工具和技术。",
+    "website": "https://sggmico.github.io",
+    "address": "",
+    "projects_url": "https://sggmico.me/projects",
+    "username": "sggmico",
+    "email": "sggmico@gmail.com",
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "sggmico",
+        "url": "https://github.com/sggmico"
+      },
+      {
+        "network": "LinkedIn",
+        "url": "https://www.linkedin.com/in/sggmico",
+        "username": "sggmico"
+      },
+      {
+        "network": "Twitter",
+        "url": "https://twitter.com/sggmico",
+        "username": "sggmico"
+      },
+      {
+        "network": "Youtube",
+        "url": "https://youtube.com/@sggmico",
+        "username": "sggmico"
+      },
+      {
+        "network": "Instagram",
+        "username": "sggmico",
+        "url": "https://instagram.com/sggmico"
+      },
+      {
+        "network": "Portfolio",
+        "username": "sggmico",
+        "url": "https://sggmico.github.io"
+      }
+    ]
+  },
+  "navList": [
+    {
+      "name": "Blog",
+      "path": "/blog",
+      "blank": false
+    },
+    {
+      "name": "Projects",
+      "path": "/projects",
+      "blank": false
+    },
+    {
+      "name": "Talks",
+      "path": "/talks",
+      "blank": true
+    },
+    {
+      "name": "Sponsors",
+      "path": "/sponsors",
+      "blank": true
+    }
+  ],
+  "skills": [
+    {
+      "keywords": [
+        "Agents",
+        "MCP",
+        "A2A",
+        "N8N",
+        "Flowise",
+        "RAG",
+        "LLM本地部署"
+      ],
+      "level": "Intermediate",
+      "name": "AI"
+    },
+    {
+      "keywords": [
+        "Wagmi",
+        "Ethers.js",
+        "Web3.js",
+        "Hardhat",
+        "Openzeppelin",
+        "Solidity",
+        "Uniswap V3",
+        "RainbowKit",
+        "Remix"
+      ],
+      "level": "Intermediate",
+      "name": "Web3"
+    },
+    {
+      "keywords": [
+        "TypeScript",
+        "React/Next.js",
+        "Vue/Nuxt.js",
+        "Vite/Webpack",
+        "Tailwind CSS",
+        "WASM"
+      ],
+      "level": "Senior",
+      "name": "Frontend"
+    },
+    {
+      "keywords": ["BackStop", "Jest"],
+      "level": "Senior",
+      "name": "QA"
+    },
+    {
+      "keywords": [
+        "Node.js",
+        "GraphQL",
+        "Nginx",
+        "Supabase",
+        "Docker",
+        "Serverless"
+      ],
+      "level": "Senior",
+      "name": "Backend"
+    },
+    {
+      "keywords": ["Redis", "MongoDB", "PostgreSQL", "Clickhouse"],
+      "level": "Intermediate",
+      "name": "DB"
+    },
+    {
+      "keywords": [
+        "Vercel",
+        "AWS Lambda",
+        "Cloudflare",
+        "IPFS",
+        "Firebase",
+        "Azure",
+        "AliCloud"
+      ],
+      "level": "Intermediate",
+      "name": "Cloud"
+    },
+    {
+      "keywords": ["Go", "Python", "Rust"],
+      "level": "Intermediate",
+      "name": "Languages"
+    }
+  ],
+  "projects": [
+    {
+      "name": "众筹合约",
+      "displayName": "Web3开源-众筹合约",
+      "summary": "xxxx",
+      "website": "https://sggmico.github.io",
+      "githubUrl": "https://github.com/sggmico",
+      "primaryLanguage": "TypeScript",
+      "skills": ["React", "Wagmi", "Solidity", "Optimism", "Chainlink", "Pyth"]
+    },
+    {
+      "name": "DeFi衍生品交易平台",
+      "displayName": "Web3开源-DeFi衍生品交易平台",
+      "summary": "xxxx",
+      "website": "https://sggmico.github.io",
+      "githubUrl": "https://github.com/sggmico",
+      "primaryLanguage": "TypeScript",
+      "skills": ["React", "Wagmi", "Solidity", "Optimism", "Chainlink", "Pyth"]
+    },
+    {
+      "name": "资源流量管理中台",
+      "displayName": "KS-资源流量管理中台",
+      "summary": "资源流量管理系统，主要用于资源位管理、预占排期和数据分析等",
+      "website": "https://flow.corp.kuaishou.com",
+      "primaryLanguage": "TypeScript",
+      "skills": ["TypeScript", "Vue", "Vite", "微前端架构"]
+    },
+    {
+      "name": "春节H5会场",
+      "displayName": "KS-春节H5会场",
+      "summary": "端内春节H5会场，用于在春节期间提升站内留存的H5活动页，包括：玩法、内容、任务等模块",
+      "website": "https://sf2024.m.kuaishou.com/retain",
+      "primaryLanguage": "TypeScript",
+      "skills": ["TypeScript", "Vue", "Pinia", "Monorepo架构"]
+    },
+    {
+      "name": "H2编辑器",
+      "displayName": "EQX-H2编辑器",
+      "summary": "公司矩阵产品，主要面向toC，提供海报宣传物料的设计、编辑、预览、发布。",
+      "website": "https://store.eqxiu.com/h2",
+      "primaryLanguage": "TypeScript",
+      "skills": ["TypeScript", "Angular", "No-Code"]
+    },
+    {
+      "name": "广告投放系统",
+      "displayName": "EQX-ADS投放系统",
+      "summary": "广告投放系统，主要服务于toC产品的广告接入，帮助公司和流量主实现广告变现。",
+      "primaryLanguage": "TypeScript",
+      "skills": ["TypeScript"]
+    }
+  ],
+  "work": [
+    {
+      "company": "开源",
+      "position": "开源软件开发者",
+      "website": "https://github.com/sggmico",
+      "location": "Github",
+      "isCurrentRole": true,
+      "startDate": "2024-10-01",
+      "start": {
+        "year": 2024,
+        "month": 10
+      },
+      "end": {},
+      "highlights": [
+        "Vue.js & Vite.js Core Team Member",
+        "Received 15,000+ stars on personal projects",
+        "Maintaining numerous popular projects"
+      ]
+    },
+    {
+      "company": "快手",
+      "position": "高级前端工程师",
+      "website": "https://www.kuaishou.com/",
+      "location": "北京, 中国",
+      "startDate": "2021-08-05",
+      "endDate": "2024-9-30",
+      "start": {
+        "year": 2021,
+        "month": 8
+      },
+      "end": {},
+      "summary": "Integrated Vite into Nuxt 3 resulted in 50x faster development time.",
+      "highlights": [
+        "Integrated Vite into Nuxt 3 resulted in 50x faster development time.",
+        "Authored `unplugin` unifing the API between Webpack and Vite.",
+        "Created Vitest that improved the developer experience on testing."
+      ]
+    },
+    {
+      "company": "易企秀",
+      "position": "前端工程师",
+      "website": "https://www.eqxiu.com",
+      "location": "北京，中国",
+      "startDate": "2015-06-23",
+      "endDate": "2021-03-05",
+      "start": {
+        "year": 2015,
+        "month": 6
+      },
+      "end": {},
+      "highlights": [
+        "Vue.js & Vite.js Core Team Member",
+        "Received 15,000+ stars on personal projects",
+        "Maintaining numerous popular projects"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "河北科技师范学院, 秦皇岛, 中国",
+      "area": "物理学",
+      "studyType": "理学学士",
+      "startDate": "2011-09-01",
+      "endDate": "2015-06-01",
+      "start": {
+        "year": 2011,
+        "month": 9
+      },
+      "end": {
+        "year": 2015,
+        "month": 6
+      },
+      "description": "",
+      "activities": "",
+      "gpa": "",
+      "courses": []
+    }
+  ],
+  "languages": [
+    {
+      "language": "中文",
+      "fluency": "母语"
+    },
+    {
+      "language": "英语",
+      "fluency": "中级"
+    }
+  ],
+  "publications": [
+    {
+      "name": "New Ways to Vue",
+      "summary": "How the new tools and techniques affect the way we view and build applications",
+      "publisher": "Vue London 2021",
+      "website": "https://vuejslive.com/",
+      "releaseDate": "2021-10-20",
+      "slides": "https://sggmico.me/posts/new-ways-to-vue-london-2021",
+      "fullReleaseDate": {
+        "year": 2021,
+        "month": 10,
+        "day": 20
+      }
+    },
+    {
+      "name": "Composable Vue",
+      "summary": "Talked about the reactivity system and Composition API in Vue.js",
+      "publisher": "VueDay 2021",
+      "website": "https://2021.vueday.it/",
+      "releaseDate": "2021-04-29",
+      "slides": "https://sggmico.me/posts/composable-vue-vueday-2021",
+      "fullReleaseDate": {
+        "year": 2021,
+        "month": 4,
+        "day": 29
+      }
+    },
+    {
+      "name": "Develop with Vite",
+      "summary": "Introduce to Vite, the next generation frontend tooling",
+      "publisher": "Vue Beijing 2021",
+      "website": "https://twitter.com/beijing_vue",
+      "releaseDate": "2021-03-29",
+      "slides": "https://sggmico.me/posts/vue-beijing-2021",
+      "fullReleaseDate": {
+        "year": 2021,
+        "month": 3,
+        "day": 29
+      }
+    },
+    {
+      "name": "Binjiang Front-End Developer Salon, Hangzhou",
+      "summary": "Talked about the reactivity system and Composition API in Vue.js",
+      "publisher": "Bingjiang Front-End Union",
+      "website": "https://wemp.app/posts/5ec27920-8201-4ef2-9027-92b09b136fab",
+      "releaseDate": "2020-09-26",
+      "slides": "https://sggmico.me/posts/binfe-2020-zh/",
+      "fullReleaseDate": {
+        "year": 2020,
+        "month": 9,
+        "day": 26
+      }
+    }
+  ],
+  "volunteer": [],
+  "awards": [
+    {
+      "title": "Idea Maker Competition Masterpiece Award",
+      "summary": "",
+      "awarder": "Oriental Institute of Technology",
+      "date": "2018-10-01",
+      "fullDate": {
+        "year": 2018,
+        "month": 10
+      }
+    },
+    {
+      "title": "Graduation Project Competition Masterpiece Award",
+      "summary": "",
+      "awarder": "Tamkang University",
+      "date": "2018-06-01",
+      "fullDate": {
+        "year": 2018,
+        "month": 6
+      }
+    },
+    {
+      "title": "First Class Scholarship for Academics (top one)",
+      "summary": "",
+      "awarder": "Tamkang University",
+      "date": "2016-11-01",
+      "fullDate": {
+        "year": 2016,
+        "month": 11
+      }
+    }
+  ],
+  "interests": [],
+  "references": []
+}
