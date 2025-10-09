@@ -150,26 +150,34 @@
   "projects": [
     {
       "name": "众筹合约",
-      "displayName": "Web3开源-众筹合约",
-      "summary": "xxxx",
+      "displayName": "OSS-FundQuest",
+      "summary": "去中心化众筹平台，创作者通过发行NFT来筹集资金。",
       "website": "https://sggmico.github.io",
-      "githubUrl": "https://github.com/sggmico",
+      "githubUrl": "https://github.com/sggmico/fund-quest",
       "primaryLanguage": "TypeScript",
-      "skills": ["React", "Wagmi", "Solidity", "Optimism", "Chainlink", "Pyth"]
+      "skills": [
+        "React",
+        "Wagmi",
+        "Solidity",
+        "Foundry",
+        "Optimism",
+        "Chainlink",
+        "Pyth"
+      ]
     },
     {
       "name": "DeFi衍生品交易平台",
-      "displayName": "Web3开源-DeFi衍生品交易平台",
-      "summary": "xxxx",
+      "displayName": "OSS-HedgehogProtocol",
+      "summary": "智能对冲，新一代DeFi衍生品交易平台。",
       "website": "https://sggmico.github.io",
-      "githubUrl": "https://github.com/sggmico",
+      "githubUrl": "https://github.com/sggmico/hedgehog-protocol",
       "primaryLanguage": "TypeScript",
       "skills": ["React", "Wagmi", "Solidity", "Optimism", "Chainlink", "Pyth"]
     },
     {
       "name": "资源流量管理中台",
       "displayName": "KS-资源流量管理中台",
-      "summary": "资源流量管理系统，主要用于资源位管理、预占排期和数据分析等",
+      "summary": "资源流量管理系统，主要用于资源位管理、预占排期和数据分析等。",
       "website": "https://flow.corp.kuaishou.com",
       "primaryLanguage": "TypeScript",
       "skills": ["TypeScript", "Vue", "Vite", "微前端架构"]
@@ -177,7 +185,7 @@
     {
       "name": "春节H5会场",
       "displayName": "KS-春节H5会场",
-      "summary": "端内春节H5会场，用于在春节期间提升站内留存的H5活动页，包括：玩法、内容、任务等模块",
+      "summary": "端内春节H5会场，用于在春节期间提升站内留存的H5活动页，包括：玩法、内容、任务等模块。",
       "website": "https://sf2024.m.kuaishou.com/retain",
       "primaryLanguage": "TypeScript",
       "skills": ["TypeScript", "Vue", "Pinia", "Monorepo架构"]

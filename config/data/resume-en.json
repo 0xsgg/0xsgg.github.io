@@ -94,65 +94,59 @@
   ],
   "projects": [
     {
-      "name": "vitest/vitest",
-      "displayName": "Vitest",
-      "summary": "A blazing fast unit test framework powered by Vite.",
-      "website": "https://vitest.dev/",
-      "githubUrl": "https://github.com/vitest-dev/vitest",
+      "name": "众筹合约",
+      "displayName": "Web3开源-众筹合约",
+      "summary": "an innovative decentralized crowdfunding platform",
+      "website": "https://sggmico.github.io",
+      "githubUrl": "https://github.com/sggmico/fund-quest",
       "primaryLanguage": "TypeScript",
       "skills": [
-        "TypeScript",
-        "Vue",
-        "Node",
-        "MongoDB",
-        "MySQL",
-        "Serverless",
-        "Nginx",
-        "Docker"
+        "React",
+        "Wagmi",
+        "Solidity",
+        "Foundry",
+        "Optimism",
+        "Chainlink",
+        "Pyth"
       ]
     },
     {
-      "name": "slidevjs/slidev",
-      "displayName": "Slidev",
-      "summary": "Presentation Slides for Developers.",
-      "website": "https://sli.dev/",
-      "githubUrl": "https://github.com/slidevjs/slidev",
+      "name": "DeFi衍生品交易平台",
+      "displayName": "Hedgehog-Protocol",
+      "summary": "Smart Hedging, Decentralized Trading",
+      "website": "https://sggmico.github.io",
+      "githubUrl": "https://github.com/sggmico/hedgehog-protocol",
       "primaryLanguage": "TypeScript",
-      "skills": ["TypeScript"]
+      "skills": ["React", "Wagmi", "Solidity", "Optimism", "Chainlink", "Pyth"]
     },
     {
-      "name": "unocss/unocss",
-      "displayName": "UnoCSS",
-      "summary": "Instant on-demand atomic CSS engine.",
-      "website": "https://uno.sggmico.me/",
-      "githubUrl": "https://github.com/unocss/unocss",
+      "name": "资源流量管理中台",
+      "displayName": "KS-资源流量管理中台",
+      "summary": "资源流量管理系统，主要用于资源位管理、预占排期和数据分析等。",
+      "website": "https://flow.corp.kuaishou.com",
       "primaryLanguage": "TypeScript",
-      "skills": ["TypeScript"]
+      "skills": ["TypeScript", "Vue", "Vite", "微前端架构"]
     },
     {
-      "name": "vueuse/vueuse",
-      "displayName": "VueUse",
-      "summary": "Collection of essential Vue Composition API utils.",
-      "website": "https://vueuse.org/",
-      "githubUrl": "https://github.com/vueuse/vueuse",
+      "name": "春节H5会场",
+      "displayName": "KS-春节H5会场",
+      "summary": "端内春节H5会场，用于在春节期间提升站内留存的H5活动页，包括：玩法、内容、任务等模块。",
+      "website": "https://sf2024.m.kuaishou.com/retain",
       "primaryLanguage": "TypeScript",
-      "skills": ["TypeScript"]
+      "skills": ["TypeScript", "Vue", "Pinia", "Monorepo架构"]
     },
     {
-      "name": "nuxt/framework",
-      "displayName": "Nuxt",
-      "summary": "The Hybrid Vue(3) Framework.",
-      "website": "https://v3.nuxtjs.org/",
-      "githubUrl": "https://github.com/nuxt/framework",
+      "name": "H2编辑器",
+      "displayName": "EQX-H2编辑器",
+      "summary": "公司矩阵产品，主要面向toC，提供海报宣传物料的设计、编辑、预览、发布。",
+      "website": "https://store.eqxiu.com/h2",
       "primaryLanguage": "TypeScript",
-      "skills": ["TypeScript"]
+      "skills": ["TypeScript", "Angular", "No-Code"]
     },
     {
-      "name": "vitejs/vite",
-      "displayName": "Vite",
-      "summary": "Next generation frontend tooling.",
-      "website": "https://vitejs.dev/",
-      "githubUrl": "https://github.com/vitejs/vite",
+      "name": "广告投放系统",
+      "displayName": "EQX-ADS投放系统",
+      "summary": "广告投放系统，主要服务于toC产品的广告接入，帮助公司和流量主实现广告变现。",
       "primaryLanguage": "TypeScript",
       "skills": ["TypeScript"]
     }
