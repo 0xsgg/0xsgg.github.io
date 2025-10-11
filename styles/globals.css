@@ -7,9 +7,9 @@
   --foreground-rgb: 0, 0, 0;
   --background-rgb: 255, 255, 255;
   /* Custom text color variables */
-  --text-primary: #171717;
+  --text-primary: #374151;
   /* --text-primary-hover: #0070f3; */
-  --text-primary-hover: #171717;
+  --text-primary-hover: #374151;
   --text-secondary: #666666;
   --text-secondary-hover: #333333;
 }

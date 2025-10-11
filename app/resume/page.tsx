@@ -14,7 +14,7 @@ export default function Resume() {
                 <div className="md:col-span-2">
                     <div className="text-center lg:text-left">
                         {/* 姓名和职位 */}
-                        <h1 className="text-3xl text-black mb-1">
+                        <h1 className="text-3xl text-text-primary mb-1">
                             {basics.name}
                         </h1>
                         <h2 className="text-md font-light text-text-primary opacity-60 mb-1">
@@ -48,7 +48,7 @@ export default function Resume() {
                         <h2 className="text-md mb-5 tracking-wide">
                             <span className="font-bold bg-black text-white pl-1 pr-3 py-[1px]">About</span>
                         </h2>
-                        <div className="md:pl-4 print:pl-4 text-text-primary opacity-90 leading-relaxed space-y-4 text-sm">
+                        <div className="md:pl-4 print:pl-4 text-text-primary opacity-90 leading-relaxed space-y-4 text-sm tracking-wide">
                             {basics.summary.split('\n\n').map((paragraph, index) => (
                                 <p key={index}>
                                     {paragraph.trim()}
@@ -81,7 +81,7 @@ export default function Resume() {
                                                 )}
                                             </div>
                                         </h3>
-                                        <p className="opacity-80 mb-2 text-sm">
+                                        <p className="opacity-80 mb-2 text-sm tracking-wide">
                                             {project.summary}
                                         </p>
                                         <div className="flex justify-start items-start space-x-2 opacity-80 text-xs">
@@ -126,7 +126,7 @@ export default function Resume() {
                                             </div>
                                         </div>
                                         {job.summary && (
-                                            <p className="font-semibold italic mb-3">
+                                            <p className="font-semibold italic mb-3 tracking-wide">
                                                 {job.summary}
                                             </p>
                                         )}
@@ -135,7 +135,7 @@ export default function Resume() {
                                                 {job.highlights.map((highlight, hIndex) => (
                                                     <li key={hIndex} className="flex items-top gap-2">
                                                         <span className="mt-[0.54em] w-1.5 h-1.5 border border-black rounded-full flex-shrink-0 print:mt-[0.44em]"></span>
-                                                        <span>{highlight}</span>
+                                                        <span className="tracking-wide">{highlight}</span>
                                                     </li>
                                                 ))}
                                             </ul>
@@ -155,8 +155,8 @@ export default function Resume() {
                             {skills.map((skill, index) => (
                                 <div key={index}>
                                     <div className="grid grid-cols-[80px_1fr] gap-5 items-baseline text-md text-text-primary mb-2">
-                                        <span className="text-right font-bold leading-relaxed whitespace-nowrap">{skill.name}</span>
-                                        <p className="leading-relaxed">
+                                        <span className="text-right font-bold leading-relaxed whitespace-nowrap tracking-wide">{skill.name}</span>
+                                        <p className="leading-relaxed tracking-wide">
                                             {
                                                 skill.keywords.map((name, index) => {
                                                     return (
@@ -180,7 +180,7 @@ export default function Resume() {
                         </h2>
                         {education.map((edu, index) => (
                             <div key={index} className="mb-4 md:pl-4 print:pl-4 text-text-primary">
-                                <div className="flex flex-wrap items-center gap-1 text-text-primary text-md mb-1">
+                                <div className="flex flex-wrap items-center gap-1 text-text-primary text-md mb-1 tracking-wide">
                                     <span className="font-bold">
                                         {edu.area}, {edu.studyType},
                                     </span>
@@ -199,7 +199,7 @@ export default function Resume() {
                         <h2 className="text-md mb-5 tracking-wide">
                             <span className="font-bold bg-black text-white pl-1 pr-3 py-[1px]">Languages</span>
                         </h2>
-                        <div className="flex flex-wrap items-center gap-1 text-text-primary md:pl-4 print:pl-4">
+                        <div className="flex flex-wrap items-center gap-1 text-text-primary md:pl-4 print:pl-4 tracking-wide">
                             {languages.map((language, index) => (
                                 <div key={index} className="flex items-center">
                                     <span className="font-bold">{language.language}</span>
