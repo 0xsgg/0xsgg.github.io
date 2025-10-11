@@ -11,6 +11,9 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['var(--font-nunito-sans)', 'var(--font-noto-sans-sc)', 'system-ui', 'sans-serif'],
+      },
       colors: {
         "text-primary": "var(--text-primary)",
         "text-primary-hover": "var(--text-primary-hover)",
