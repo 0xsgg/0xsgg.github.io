@@ -4,8 +4,8 @@
     "picture": "https://sggmico.me/avatar.png",
     "label": "Software Engineer",
     "headline": "A ship in harbor is safe, but that is not what ships are built for.",
-    "summary": "My name is Sgg Mico, a master of computer science student and a freelance software engineer. My passion for software lies with dreaming up ideas and making them come true with elegant interfaces. I take great care in the experience, architecture, and code quality of the things I build.\n\nI am also an open-source enthusiast and maintainer. I love how collaboration and knowledge sharing happens through open-source and I am happy to see what I do could eventually feedback to the community and industry.",
-    "website": "https://sggmico.me",
+    "summary": "I'm sggmico, a frontend developer advancing towards becoming a full-stack Web3 engineer.\n\nWith 10+ years of frontend development experience and 3+ years of practical experience at major internet companies, I have a solid foundation in frontend technologies, am well-versed in web development architecture, and proficient in mainstream development frameworks and open-source ecosystems.\n\nWith 2+ years of deep expertise in Web3, I'm familiar with blockchain fundamentals and Ethereum technology, with deep understanding of decentralization and digital assets. I'm proficient in Solidity smart contract development and master the complete contract development lifecycle (development, testing, deployment, maintenance). I'm familiar with ERC standards (ERC20/721/1155) and security contract libraries like OpenZeppelin, with blockchain security awareness. I've participated in NFT ecosystem development with complete experience from NFT generation, rarity processing to contract deployment and marketplace listing.\n\nI possess agile project management capabilities, ensuring code quality and efficient iteration through automated testing, code reviews, and CI/CD practices. I excel at breaking down complex problems and transforming them into actionable technical solutions, and am skilled in technical challenges and process automation.\n\nI'm passionate about creating user-friendly and beautiful interface experiences, pursuing a balance between usability and design aesthetics. I actively participate in the open-source community, continuously follow technology trends, and enjoy exploring new tools and cutting-edge technologies.",
+    "website": "https://sggmico.github.io",
     "address": "",
     "projects_url": "https://sggmico.me/projects",
     "username": "sggmico",
@@ -67,36 +67,91 @@
   ],
   "skills": [
     {
-      "keywords": ["TypeScript", "Reack", "Next", "Vue", "Vite"],
+      "keywords": [
+        "Agents",
+        "MCP",
+        "A2A",
+        "N8N",
+        "Flowise",
+        "RAG",
+        "Local LLM Deployment"
+      ],
+      "level": "Intermediate",
+      "name": "AI"
+    },
+    {
+      "keywords": [
+        "Wagmi",
+        "Ethers.js",
+        "Web3.js",
+        "Hardhat",
+        "Openzeppelin",
+        "Solidity",
+        "Uniswap V3",
+        "RainbowKit",
+        "Remix"
+      ],
+      "level": "Intermediate",
+      "name": "Web3"
+    },
+    {
+      "keywords": [
+        "TypeScript",
+        "React/Next.js",
+        "Vue/Nuxt.js",
+        "Vite/Webpack",
+        "Tailwind CSS",
+        "WASM"
+      ],
       "level": "Senior",
       "name": "Frontend"
     },
     {
-      "keywords": ["Node", "MongoDB", "MySQL", "Serverless", "Nginx", "Docker"],
+      "keywords": ["BackStop", "Jest"],
+      "level": "Senior",
+      "name": "QA"
+    },
+    {
+      "keywords": [
+        "Node.js",
+        "GraphQL",
+        "Nginx",
+        "Supabase",
+        "Docker",
+        "Serverless"
+      ],
       "level": "Senior",
       "name": "Backend"
     },
     {
-      "keywords": ["Android", "Kotlin", "PWA"],
+      "keywords": ["Redis", "MongoDB", "PostgreSQL", "Clickhouse"],
       "level": "Intermediate",
-      "name": "Mobile"
+      "name": "DB"
     },
     {
-      "keywords": ["Firebase", "AWS", "Azure", "AliCloud"],
+      "keywords": [
+        "Vercel",
+        "AWS Lambda",
+        "Cloudflare",
+        "IPFS",
+        "Firebase",
+        "Azure",
+        "AliCloud"
+      ],
       "level": "Intermediate",
-      "name": "DevOps"
+      "name": "Cloud"
     },
     {
-      "keywords": ["Python", "Java", "C/C++", "C#", "Go"],
+      "keywords": ["Go", "Python", "Rust"],
       "level": "Intermediate",
       "name": "Languages"
     }
   ],
   "projects": [
     {
-      "name": "众筹合约",
-      "displayName": "Web3开源-众筹合约",
-      "summary": "an innovative decentralized crowdfunding platform",
+      "name": "Crowdfunding Contract",
+      "displayName": "OSS-FundQuest",
+      "summary": "A decentralized crowdfunding platform where creators raise funds through NFT issuance.",
       "website": "https://sggmico.github.io",
       "githubUrl": "https://github.com/sggmico/fund-quest",
       "primaryLanguage": "TypeScript",
@@ -111,42 +166,42 @@
       ]
     },
     {
-      "name": "DeFi衍生品交易平台",
-      "displayName": "Hedgehog-Protocol",
-      "summary": "Smart Hedging, Decentralized Trading",
+      "name": "DeFi Derivatives Trading Platform",
+      "displayName": "OSS-HedgehogProtocol",
+      "summary": "Smart hedging, next-generation DeFi derivatives trading platform.",
       "website": "https://sggmico.github.io",
       "githubUrl": "https://github.com/sggmico/hedgehog-protocol",
       "primaryLanguage": "TypeScript",
       "skills": ["React", "Wagmi", "Solidity", "Optimism", "Chainlink", "Pyth"]
     },
     {
-      "name": "资源流量管理中台",
-      "displayName": "KS-资源流量管理中台",
-      "summary": "资源流量管理系统，主要用于资源位管理、预占排期和数据分析等。",
+      "name": "Resource & Traffic Management Platform",
+      "displayName": "KS-Flow",
+      "summary": "Resource and traffic management system for resource allocation, scheduling, and data analysis.",
       "website": "https://flow.corp.kuaishou.com",
       "primaryLanguage": "TypeScript",
-      "skills": ["TypeScript", "Vue", "Vite", "微前端架构"]
+      "skills": ["TypeScript", "Vue", "Vite", "Micro-Frontend Architecture"]
     },
     {
-      "name": "春节H5会场",
-      "displayName": "KS-春节H5会场",
-      "summary": "端内春节H5会场，用于在春节期间提升站内留存的H5活动页，包括：玩法、内容、任务等模块。",
+      "name": "Chinese New Year H5 Campaign",
+      "displayName": "KS-CNY2024",
+      "summary": "In-app Chinese New Year H5 campaign to boost user retention during the festival, featuring gameplay, content, and task modules.",
       "website": "https://sf2024.m.kuaishou.com/retain",
       "primaryLanguage": "TypeScript",
-      "skills": ["TypeScript", "Vue", "Pinia", "Monorepo架构"]
+      "skills": ["TypeScript", "Vue", "Pinia", "Monorepo Architecture"]
     },
     {
-      "name": "H2编辑器",
-      "displayName": "EQX-H2编辑器",
-      "summary": "公司矩阵产品，主要面向toC，提供海报宣传物料的设计、编辑、预览、发布。",
+      "name": "H2 Editor",
+      "displayName": "EQX-H2Editor",
+      "summary": "Company matrix product for consumers, providing design, editing, preview, and publishing of poster materials.",
       "website": "https://store.eqxiu.com/h2",
       "primaryLanguage": "TypeScript",
       "skills": ["TypeScript", "Angular", "No-Code"]
     },
     {
-      "name": "广告投放系统",
-      "displayName": "EQX-ADS投放系统",
-      "summary": "广告投放系统，主要服务于toC产品的广告接入，帮助公司和流量主实现广告变现。",
+      "name": "Advertising System",
+      "displayName": "EQX-ADS",
+      "summary": "Advertising management system for consumer products, enabling ad monetization for the company and publishers.",
       "primaryLanguage": "TypeScript",
       "skills": ["TypeScript"]
     }
@@ -154,7 +209,7 @@
   "work": [
     {
       "company": "Open Source",
-      "position": "OSS Developer",
+      "position": "Open Source Software Developer",
       "website": "https://github.com/sggmico",
       "location": "Github",
       "isCurrentRole": true,
@@ -165,14 +220,13 @@
       },
       "end": {},
       "highlights": [
-        "Vue.js & Vite.js Core Team Member",
-        "Received 15,000+ stars on personal projects",
-        "Maintaining numerous popular projects"
+        "Decentralized crowdfunding platform where creators raise funds through NFT issuance.",
+        "Smart hedging next-generation DeFi derivatives trading platform."
       ]
     },
     {
-      "company": "KuaiShou",
-      "position": "Senior Frontend Developer",
+      "company": "Kuaishou",
+      "position": "Senior Frontend Engineer",
       "website": "https://www.kuaishou.com/",
       "location": "Beijing, China",
       "startDate": "2021-08-05",
@@ -182,30 +236,62 @@
         "month": 8
       },
       "end": {},
-      "summary": "Integrated Vite into Nuxt 3 resulted in 50x faster development time.",
+      "summary": "Responsible for frontend development and maintenance of the resource and traffic management platform, managing 50+ in-app resource positions. Serving B2B users, providing B-S++ level campaign operation capabilities.",
       "highlights": [
-        "Integrated Vite into Nuxt 3 resulted in 50x faster development time.",
-        "Authored `unplugin` unifing the API between Webpack and Vite.",
-        "Created Vitest that improved the developer experience on testing."
+        "Visualized universal resource position configuration solution, improving configuration efficiency by 50%.",
+        "Real-time preview (resource position configuration), increasing configuration accuracy by 30% and enhancing user experience for operations team.",
+        "Automated testing with coverage increased to 85%, improving system reliability and stability."
       ]
     },
     {
       "company": "Eqxiu",
-      "position": "Front-end Developer",
+      "position": "Senior Frontend Engineer",
       "website": "https://www.eqxiu.com",
       "location": "Beijing, China",
       "startDate": "2015-06-23",
       "endDate": "2021-03-05",
       "start": {
         "year": 2015,
-        "month": 1
+        "month": 6
       },
       "end": {},
+      "summary": "Responsible for frontend development and maintenance of H2 editor, serving C2C users with online creation, editing, preview, sharing, and downloading of poster marketing materials.",
       "highlights": [
-        "Vue.js & Vite.js Core Team Member",
-        "Received 15,000+ stars on personal projects",
-        "Maintaining numerous popular projects"
+        "Self-developed DOM rendering engine, designed and implemented real-time editing of core elements with smooth interactive experience.",
+        "Led multi-format export system, solving critical challenges including cross-origin, font handling, and cross-browser compatibility.",
+        "Designed Git-like history management system supporting unlimited undo/redo, significantly improving user fault tolerance and editing experience."
       ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Hebei Normal University of Science & Technology, Qinhuangdao, China",
+      "area": "Physics",
+      "studyType": "Bachelor of Science",
+      "startDate": "2011-09-01",
+      "endDate": "2015-06-01",
+      "start": {
+        "year": 2011,
+        "month": 9
+      },
+      "end": {
+        "year": 2015,
+        "month": 6
+      },
+      "description": "",
+      "activities": "",
+      "gpa": "",
+      "courses": []
+    }
+  ],
+  "languages": [
+    {
+      "language": "Chinese",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "Intermediate"
     }
   ],
   "publications": [
@@ -262,27 +348,6 @@
       }
     }
   ],
-  "education": [
-    {
-      "institution": "Tamkang University, New Taipei",
-      "area": "Computer Science",
-      "studyType": "Bachelor of Science",
-      "startDate": "2015-09-01",
-      "endDate": "2019-06-01",
-      "start": {
-        "year": 2015,
-        "month": 9
-      },
-      "end": {
-        "year": 2019,
-        "month": 6
-      },
-      "description": "",
-      "activities": "",
-      "gpa": "",
-      "courses": []
-    }
-  ],
   "volunteer": [],
   "awards": [
     {
@@ -314,20 +379,6 @@
         "year": 2016,
         "month": 11
       }
-    }
-  ],
-  "languages": [
-    {
-      "language": "Chinese",
-      "fluency": "Native speaker"
-    },
-    {
-      "language": "English",
-      "fluency": "Fluent"
-    },
-    {
-      "language": "Japanese",
-      "fluency": "Intermediate"
     }
   ],
   "interests": [],

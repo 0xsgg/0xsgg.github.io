@@ -4,7 +4,7 @@
     "picture": "https://sggmico.me/avatar.png",
     "label": "Software Engineer",
     "headline": "A ship in harbor is safe, but that is not what ships are built for.",
-    "summary": "Hi，我是 sggmico，一名前端开发工程师，并且一直在努力提升自己，争取成为一名全栈 Web3 开发工程师。\n\n10+年前端开发经验，3+年大型互联网公司开发经验，前端基础扎实，熟悉Web开发体系架构，熟练掌握前端常用开发框架和开源Libs。\n\n2+年Web3参与和开发经验，了解区块链基础原理，熟悉Ethereum技术，对去中心化技术以及数字资产有深度的理解。熟练使用Solidity进行智能合约的开发，掌握智能合约的开发、调试、测试、部署和维护。了解ERC20，ERC721，ERC1155等合约标准，熟悉OpenZeppelin等第三方安全合约库，对区块链安全有认知和经验。参与过NFT生态，有NFT发行经验，熟悉掌握NFT图片生成、筛选、稀有度处理、智能合约上架交易所流程。\n\n具备敏捷项目管理与开发能力，通过自动化测试、Code Review、静态代码扫描等手段来保障代码质量，实践主干开发、持续交付等来完成项目的高效、高质量迭代。善于分析和拆解复杂问题，变为可实现的技术方案，善于技术攻坚。思维活跃，执行力强，喜欢探索，善于用技术去解决问题，喜欢将繁杂的日常重复工作通过程序自动化。\n\n作为热衷于界面和网站开发的开发者。我热爱创造用户友好且富有创意的数字体验，喜欢通过代码将新想法变为现实，并且认为最好的产品既要易于使用，又要美观耐看，因此我在开发的每一个项目中都会努力寻求这种平衡。\n\n另外，我以化繁为简、打造用户喜爱的界面为荣。除了日常工作，我还积极参与开源社区，为那些我感兴趣且能帮助其他开发者的项目贡献力量。不编码的时候，我喜欢关注最新的技术趋势，尝试新的工具和技术。\n\n 欢迎来到我的世界，期待未来有机会与您合作，共创些有意思的事！",
+    "summary": "我是 sggmico，一名前端开发工程师，正在向全栈 Web3 开发工程师方向深耕。\n\n拥有10+年前端开发经验，3+年大型互联网公司实战经历。前端基础扎实，熟悉Web开发体系架构，精通主流开发框架与开源生态。\n\n在Web3领域深耕2+年，熟悉区块链底层原理与Ethereum技术体系，对去中心化和数字资产有深度理解。熟练使用Solidity开发智能合约，掌握完整的合约开发生命周期（开发、测试、部署、维护）。熟悉ERC标准（ERC20/721/1155）及OpenZeppelin等安全合约库，具备区块链安全认知。参与过NFT生态建设，拥有从NFT生成、稀有度处理到合约部署上架的完整经验。\n\n具备敏捷项目管理能力，通过自动化测试、Code Review、CI/CD等实践保障代码质量与高效迭代。擅长拆解复杂问题并转化为可落地的技术方案，善于技术攻坚与流程自动化。\n\n热衷于打造用户友好且美观的界面体验，追求易用性与设计感的平衡。积极参与开源社区，持续关注技术趋势，乐于探索新工具与前沿技术。",
     "website": "https://sggmico.github.io",
     "address": "",
     "projects_url": "https://sggmico.me/projects",
@@ -220,9 +220,10 @@
       },
       "end": {},
       "highlights": [
-        "Vue.js & Vite.js Core Team Member",
-        "Received 15,000+ stars on personal projects",
-        "Maintaining numerous popular projects"
+        "个人智能交易系统，支持多种交易所和策略的量化交易。",
+        "去中心化众筹平台，创作者通过发行NFT来筹集资金。",
+        "智能对冲新一代DeFi衍生品交易平台。",
+        "博客系统，支持Markdown和MDX语法，内置评论和搜索功能。"
       ]
     },
     {
@@ -237,16 +238,16 @@
         "month": 8
       },
       "end": {},
-      "summary": "Integrated Vite into Nuxt 3 resulted in 50x faster development time.",
+      "summary": "负责资源流量管理中台前端开发与维护，统一管理50+端内资源位。服务于B端用户，提供B-S++级别各类活动运营能力。",
       "highlights": [
-        "Integrated Vite into Nuxt 3 resulted in 50x faster development time.",
-        "Authored `unplugin` unifing the API between Webpack and Vite.",
-        "Created Vitest that improved the developer experience on testing."
+        "可视化通用资源位配置方案，提升资源位配置效率50%。",
+        "实时效果预览（资源位配置），提高配置准确率30%，提升运营同学使用体验。",
+        "自动化测试，覆盖率提升至85%，提升系统可靠性和稳定性。"
       ]
     },
     {
       "company": "易企秀",
-      "position": "前端工程师",
+      "position": "高级前端工程师",
       "website": "https://www.eqxiu.com",
       "location": "北京，中国",
       "startDate": "2015-06-23",
@@ -256,10 +257,11 @@
         "month": 6
       },
       "end": {},
+      "summary": "负责h2编辑器的前端开发与维护，服务于C端用户，提供在线创建、编辑、预览、分享、下载海报营销物料。",
       "highlights": [
-        "Vue.js & Vite.js Core Team Member",
-        "Received 15,000+ stars on personal projects",
-        "Maintaining numerous popular projects"
+        "自研DOM渲染引擎，负责核心元素实时编辑的设计与实现，支持流畅交互体验。",
+        "主导多格式导出系统，解决跨域、字体、跨浏览器等核心难题。",
+        "设计类Git的历史管理系统，支持无限undo/redo，显著提升用户容错性和编辑体验。"
       ]
     }
   ],
