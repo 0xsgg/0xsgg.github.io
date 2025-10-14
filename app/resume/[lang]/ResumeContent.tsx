@@ -112,7 +112,7 @@ export default function ResumeContent({ resumeData, lang }: { resumeData: Resume
                                 ))}
                             </div>
                             <p className="flex items-center justify-start mt-8 md:pl-4 print:pl-4">
-                                <Link href="/projects" isExternal className="text-text-primary opacity-80 hover:opacity-100 underline underline-offset-5 decoration-dashed decoration-1 decoration-gray-400 transition-opacity">
+                                <Link href={`${basics.website}/projects`} isExternal className="text-text-primary opacity-80 hover:opacity-100 underline underline-offset-5 decoration-dashed decoration-1 decoration-gray-400 transition-opacity">
                                     More Projects &nbsp;
                                     {getCommonIcon('arrowUpRight')}
                                 </Link>
@@ -236,7 +236,7 @@ export default function ResumeContent({ resumeData, lang }: { resumeData: Resume
                             </Link>
                         </div>
                         <div className="text-center print-only text-sm mt-2 mb-2">
-                            <Link href={`/resume/${lang}`} className="text-text-primary opacity-80 hover:opacity-100 underline underline-offset-4 decoration-dashed decoration-1 transition-opacity" isExternal>
+                            <Link href={`${basics.website}/resume/${lang}`} className="text-text-primary opacity-80 hover:opacity-100 underline underline-offset-4 decoration-dashed decoration-1 transition-opacity" isExternal>
                                 Online Version
                             </Link>
                         </div>
