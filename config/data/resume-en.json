@@ -32,6 +32,11 @@
         "username": "sggmico"
       },
       {
+        "network": "Bilibili",
+        "url": "https://space.bilibili.com/500799076",
+        "username": "sggmico"
+      },
+      {
         "network": "Instagram",
         "username": "sggmico",
         "url": "https://instagram.com/sggmico"
@@ -55,8 +60,8 @@
       "blank": false
     },
     {
-      "name": "Talks",
-      "path": "/talks",
+      "name": "Demos",
+      "path": "/demos",
       "blank": true
     },
     {

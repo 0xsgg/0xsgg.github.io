@@ -4,7 +4,7 @@
     "picture": "https://sggmico.me/avatar.png",
     "label": "Software Engineer",
     "headline": "A ship in harbor is safe, but that is not what ships are built for.",
-    "summary": "我是 sggmico，一名前端开发工程师，正在向全栈 Web3 开发工程师方向深耕。\n\n拥有10+年前端开发经验，3+年大型互联网公司实战经历。前端基础扎实，熟悉Web开发体系架构，精通主流开发框架与开源生态。\n\n在Web3领域深耕2+年，熟悉区块链底层原理与Ethereum技术体系，对去中心化和数字资产有深度理解。熟练使用Solidity开发智能合约，掌握完整的合约开发生命周期（开发、测试、部署、维护）。熟悉ERC标准（ERC20/721/1155）及OpenZeppelin等安全合约库，具备区块链安全认知。参与过NFT生态建设，拥有从NFT生成、稀有度处理到合约部署上架的完整经验。\n\n具备敏捷项目管理能力，通过自动化测试、Code Review、CI/CD等实践保障代码质量与高效迭代。擅长拆解复杂问题并转化为可落地的技术方案，善于技术攻坚与流程自动化。\n\n热衷于打造用户友好且美观的界面体验，追求易用性与设计感的平衡。积极参与开源社区，持续关注技术趋势，乐于探索新工具与前沿技术。",
+    "summary": "我是 sggmico，一名前端开发工程师，正在向全栈Web3及开源开发工程师方向深耕。\n\n拥有10+年前端开发经验，3+年大型互联网公司实战经历。前端基础扎实，熟悉Web开发体系架构，精通主流开发框架与开源生态。\n\n在Web3领域深耕2+年，熟悉区块链底层原理与Ethereum技术体系，对去中心化和数字资产有深度理解。熟练使用Solidity开发智能合约，掌握完整的合约开发生命周期（开发、测试、部署、维护）。熟悉ERC标准（ERC20/721/1155）及OpenZeppelin等安全合约库，具备区块链安全认知。参与过NFT生态建设，拥有从NFT生成、稀有度处理到合约部署上架的完整经验。\n\n具备敏捷项目管理能力，通过自动化测试、Code Review、CI/CD等实践保障代码质量与高效迭代。擅长拆解复杂问题并转化为可落地的技术方案，善于技术攻坚与流程自动化。\n\n热衷于打造用户友好且美观的界面体验，追求易用性与设计感的平衡。积极参与开源社区，持续关注技术趋势，乐于探索新工具与前沿技术。",
     "website": "https://sggmico.github.io",
     "address": "",
     "projects_url": "https://sggmico.me/projects",
@@ -29,6 +29,11 @@
       {
         "network": "Youtube",
         "url": "https://youtube.com/@sggmico",
+        "username": "sggmico"
+      },
+      {
+        "network": "Bilibili",
+        "url": "https://space.bilibili.com/500799076",
         "username": "sggmico"
       },
       {

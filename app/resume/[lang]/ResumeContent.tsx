@@ -3,6 +3,7 @@ import { Link } from '@heroui/react'
 import { getCommonIcon, getSocialIcon } from '@/lib/icons'
 import { formatDateToShort, formatDateRange, formatDateToDetailed } from '@/lib/date-utils'
 import type { ResumeData, Profile, Project, Work, Skill, Education, Language } from '@/types/resume'
+import { getProfileUrl } from '@/lib/url';
 
 export default function ResumeContent({ resumeData, lang }: { resumeData: ResumeData, lang: string }) {
     const { basics, skills, work, projects, education, languages } = resumeData
@@ -48,7 +49,7 @@ export default function ResumeContent({ resumeData, lang }: { resumeData: Resume
                                 const Icon = getSocialIcon(profile.network, "w-3.5 h-3.5");
                                 return Icon ? <Link
                                     key={index}
-                                    href={profile.url}
+                                    href={getProfileUrl(profile)}
                                     isExternal={!['portfolio', 'github'].includes(profile.network.toLowerCase())}
                                     className="text-text-primary opacity-60 hover:opacity-100 transition-opacity"
                                 >
@@ -246,6 +247,6 @@ export default function ResumeContent({ resumeData, lang }: { resumeData: Resume
                     </section>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }

@@ -7,7 +7,7 @@ import { useState, useEffect } from 'react';
 import { Dancing_Script } from 'next/font/google';
 import AnimatedLogo from '@/components/AnimatedLogo';
 import { getCommonIcon, getSocialIcon } from '@/lib/icons';
-
+import { getProfileUrl } from '@/lib/url';
 const dancing_script = Dancing_Script({ subsets: ['latin'] });
 
 import { basics, navList } from "@/config/data/resume-en.json"
@@ -37,7 +37,7 @@ export default function HomePage() {
             </nav>
             <div className="flex items-center space-x-3">
               {basics.profiles
-                .filter(profile => ['github', 'twitter', 'youtube'].includes(profile.network.toLowerCase()))
+                .filter(profile => ['github'].includes(profile.network.toLowerCase()))
                 .map((profile, index) => {
                   return (
                     <Link key={index} href={profile.url} isExternal className="text-text-primary opacity-60 hover:opacity-100 dark:opacity-80 dark:hover:opacity-100 transition-opacity cursor-pointer">
@@ -71,58 +71,111 @@ export default function HomePage() {
               <h1 className={`${dancing_script.className} text-2xl md:text-3xl font-thin tracking-tighter`}>
                 Sgg Mico
               </h1>
-              <p className="text-lg text-muted-foreground max-w-2xl">
+              <p className="text-sm">我是 sggmico，一名前端开发工程师，正在向全栈Web3及开源开发工程师方向深耕。</p>
+              {/* <p className="text-lg text-muted-foreground max-w-2xl">
                 Hey! I&apos;m Sgg Mico, a fanatical open sourceror and design engineer.
-              </p>
+              </p> */}
             </div>
 
             {/* Work Information */}
             <div className="space-y-4">
               <div className="flex flex-wrap items-center gap-2">
-                <span className="text-sm text-muted-foreground">Working at</span>
-                <Chip variant="flat" size="sm">NuxtLabs</Chip>
+                <span className="text-sm text-muted-foreground">Worked at</span>
+                <Chip
+                  variant="flat"
+                  size="sm"
+                  style={{
+                    backgroundColor: 'rgb(255, 73, 6, 0.15)',
+                    color: '#FF4906',
+                  }}
+                  classNames={{
+                    content: 'font-medium'
+                  }}
+                >
+                  <span className="inline-flex items-center gap-0.5 mt-0.5">
+                    <span>{getSocialIcon('kuaishou', 'w-3 h-3')} </span>
+                    <span className="translate-y-[0.5px]">快手</span>
+                  </span>
+                </Chip>
                 <span className="text-muted-foreground">/</span>
-                <Chip variant="flat" size="sm">Vercel</Chip>
+                <Chip
+                  variant="flat"
+                  size="sm"
+                  style={{
+                    backgroundColor: 'rgb(74, 144, 226, 0.15)',
+                    color: '#4A90E2',
+                  }}
+                  classNames={{
+                    content: 'font-medium'
+                  }}
+                >
+                  {getSocialIcon('eqxiu', 'h-2.5 translate-y-[-0.5px]')}
+                </Chip>
               </div>
 
               <div className="flex flex-wrap items-center gap-2">
                 <span className="text-sm text-muted-foreground">Creator of</span>
-                <Chip variant="flat" size="sm" color="warning">Vitest</Chip>
+                <Chip variant="flat" size="sm" color="danger" className="font-bold">FundQuest</Chip>
+                <Chip variant="flat" size="sm" color="warning" className="font-bold">HedgehogProtocol</Chip>
+                <Chip variant="flat" size="sm" color="default" className="font-bold">SmartTrade</Chip>
+                {/* <Chip variant="flat" size="sm" color="warning">Vitest</Chip>
                 <Chip variant="flat" size="sm" color="primary">Slidev</Chip>
                 <Chip variant="flat" size="sm" color="success">VueUse</Chip>
                 <Chip variant="flat" size="sm" color="secondary">UnoCSS</Chip>
                 <Chip variant="flat" size="sm" color="default">Elk</Chip>
-                <Chip variant="flat" size="sm" color="default">Type Challenges</Chip>
+                <Chip variant="flat" size="sm" color="default">Type Challenges</Chip> */}
               </div>
 
               <div className="flex flex-wrap items-center gap-2">
-                <span className="text-sm text-muted-foreground">Core team of</span>
-                <Chip variant="flat" size="sm" color="success">Vue</Chip>
+                <span className="text-sm text-muted-foreground"><del>Core team of</del></span>
+                {/* <Chip variant="flat" size="sm" color="success">Vue</Chip>
                 <Chip variant="flat" size="sm" color="primary">Nuxt</Chip>
-                <Chip variant="flat" size="sm" color="warning">Vite</Chip>
+                <Chip variant="flat" size="sm" color="warning">Vite</Chip> */}
               </div>
 
               <div className="flex flex-wrap items-center gap-2">
-                <span className="text-sm text-muted-foreground">Maintaining</span>
-                <Chip variant="flat" size="sm">Shiki</Chip>
+                <span className="text-sm text-muted-foreground">Maintained</span>
+                <Chip variant="flat" size="sm" color="success" className="font-bold">KS-Flow</Chip>
+                <Chip variant="flat" size="sm" color="secondary" className="font-bold">KS-CNY2024</Chip>
+                <Chip variant="flat" size="sm" color="success" className="font-bold">EQX-H2Editor</Chip>
+                <Chip variant="flat" size="sm" className="font-bold">EQX-ADS</Chip>
+                {/* <Chip variant="flat" size="sm">Shiki</Chip>
                 <Chip variant="flat" size="sm">Twoslash</Chip>
-                <Chip variant="flat" size="sm">ESLint Stylistic</Chip>
+                <Chip variant="flat" size="sm">ESLint Stylistic</Chip> */}
               </div>
             </div>
           </section>
 
           {/* About Section */}
-          <section className="space-y-6 text-muted-foreground">
+          <section className="space-y-6 text-muted-foreground text-sm">
             <p>
+              拥有10+年前端开发经验，3+年大型互联网公司实战经历。前端基础扎实，熟悉Web开发体系架构，精通主流开发框架与开源生态。
+              <Link href="/projects" className="text-text-primary hover:text-text-primary-hover underline underline-offset-4 decoration-dashed decoration-1 inline-flex items-center gap-1 mx-1 text-sm">
+                在此
+              </Link>可查看到我的全部项目列表。
+            </p>
+
+            <p>
+              在Web3领域深耕2+年，熟悉区块链底层原理与Ethereum技术体系，对去中心化和数字资产有深度理解。熟练使用Solidity开发智能合约，掌握完整的合约开发生命周期（开发、测试、部署、维护）。熟悉ERC标准（ERC20/721/1155）及OpenZeppelin等安全合约库，具备区块链安全认知。参与过NFT生态建设，拥有从NFT生成、稀有度处理到合约部署上架的完整经验。
+            </p>
+
+            <p>具备敏捷项目管理能力，通过自动化测试、Code Review、CI/CD等实践保障代码质量与高效迭代。擅长拆解复杂问题并转化为可落地的技术方案，善于技术攻坚与流程自动化。</p>
+
+            <p>热衷于打造用户友好且美观的界面体验，追求易用性与设计感的平衡。积极参与开源社区，持续关注技术趋势，乐于探索新工具与前沿技术。</p>
+
+            <p>
+              想了解更多，欢迎到 <Link href="/resume/zh" className="text-text-primary hover:text-text-primary-hover underline underline-offset-4 decoration-dashed decoration-1 inline-flex items-center gap-1 mx-1 text-sm"> 中文 </Link> / <Link href="/resume/en" className="text-text-primary hover:text-text-primary-hover underline underline-offset-4 decoration-dashed decoration-1 inline-flex items-center gap-1 mx-1 text-sm">EN</Link> 页面查看。
+            </p>
+
+            {/* <p>
               Dreaming up cool ideas and making them come true is where my passion lies. I am
               enthusiastic about building tools that help myself and others to be more productive
               and enjoy the process of crafting. You can find my{' '}
               <Link href="#" className="text-text-primary hover:text-text-primary-hover">
                 full projects list here
               </Link>.
-            </p>
-
-            <p>
+            </p> */}
+            {/* <p>
               I give talks and write{' '}
               <Link href="#" className="text-text-primary hover:text-text-primary-hover inline-flex items-center gap-1">
                 blog posts
@@ -162,7 +215,7 @@ export default function HomePage() {
                 东京
               </span>, if you are around, please reach out and let&apos;s have some
               coffee or work together.
-            </p>
+            </p> */}
           </section>
 
           {/* Find me on Card */}
@@ -170,13 +223,13 @@ export default function HomePage() {
             <h3 className="text-md font-semibold">Find me on</h3>
             <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-3 text-text-primary">
               {
-                basics.profiles.map((profile, index) => {
+                basics.profiles.filter((profile) => profile.network.toLowerCase() !== 'portfolio').map((profile, index) => {
                   const Icon = getSocialIcon(profile.network);
                   return Icon ? (
                     <Link
-                      isExternal={profile.network.toLocaleLowerCase() != 'github'}
+                      isExternal={!['github'].includes(profile.network.toLocaleLowerCase())}
                       key={index}
-                      href={profile.url || "#"}
+                      href={getProfileUrl(profile)}
                       className="flex items-center gap-1 rounded-lg hover:bg-muted text-text-primary opacity-80 hover:opacity-100 transition-colors"
                     >
                       {Icon}
