@@ -112,11 +112,6 @@
       "name": "Frontend"
     },
     {
-      "keywords": ["BackStop", "Jest"],
-      "level": "Senior",
-      "name": "QA"
-    },
-    {
       "keywords": [
         "Node.js",
         "GraphQL",
@@ -127,6 +122,11 @@
       ],
       "level": "Senior",
       "name": "Backend"
+    },
+    {
+      "keywords": ["BackStop", "Jest"],
+      "level": "Senior",
+      "name": "QA"
     },
     {
       "keywords": ["Redis", "MongoDB", "PostgreSQL", "Clickhouse"],
@@ -154,8 +154,24 @@
   ],
   "projects": [
     {
+      "name": "Cryptocurrency quantitative trading platform",
+      "displayName": "TradingKit",
+      "summary": "A lightweight, user-friendly, and fully functional cryptocurrency quantitative trading platform.",
+      "website": "https://sggmico.github.io",
+      "githubUrl": "https://github.com/sggmico/trading-kit",
+      "primaryLanguage": "TypeScript",
+      "skills": [
+        "Node.js",
+        "TypeScript",
+        "React",
+        "PostgreSQL",
+        "Redis",
+        "Monorepo"
+      ]
+    },
+    {
       "name": "Crowdfunding Contract",
-      "displayName": "OSS-FundQuest",
+      "displayName": "FundQuest",
       "summary": "A decentralized crowdfunding platform where creators raise funds through NFT issuance.",
       "website": "https://sggmico.github.io",
       "githubUrl": "https://github.com/sggmico/fund-quest",
@@ -172,7 +188,7 @@
     },
     {
       "name": "DeFi Derivatives Trading Platform",
-      "displayName": "OSS-HedgehogProtocol",
+      "displayName": "HedgehogProtocol",
       "summary": "Smart hedging, next-generation DeFi derivatives trading platform.",
       "website": "https://sggmico.github.io",
       "githubUrl": "https://github.com/sggmico/hedgehog-protocol",
@@ -202,13 +218,6 @@
       "website": "https://store.eqxiu.com/h2",
       "primaryLanguage": "TypeScript",
       "skills": ["TypeScript", "Angular", "No-Code"]
-    },
-    {
-      "name": "Advertising System",
-      "displayName": "EQX-ADS",
-      "summary": "Advertising management system for consumer products, enabling ad monetization for the company and publishers.",
-      "primaryLanguage": "TypeScript",
-      "skills": ["TypeScript"]
     }
   ],
   "work": [

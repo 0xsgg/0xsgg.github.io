@@ -112,11 +112,6 @@
       "name": "Frontend"
     },
     {
-      "keywords": ["BackStop", "Jest"],
-      "level": "Senior",
-      "name": "QA"
-    },
-    {
       "keywords": [
         "Node.js",
         "GraphQL",
@@ -127,6 +122,11 @@
       ],
       "level": "Senior",
       "name": "Backend"
+    },
+    {
+      "keywords": ["BackStop", "Jest"],
+      "level": "Senior",
+      "name": "QA"
     },
     {
       "keywords": ["Redis", "MongoDB", "PostgreSQL", "Clickhouse"],
@@ -154,8 +154,24 @@
   ],
   "projects": [
     {
+      "name": "加密货币量化交易平台",
+      "displayName": "TradingKit",
+      "summary": "一个轻量级、易用、功能完整的加密货币量化交易平台。",
+      "website": "https://sggmico.github.io",
+      "githubUrl": "https://github.com/sggmico/trading-kit",
+      "primaryLanguage": "TypeScript",
+      "skills": [
+        "Node.js",
+        "TypeScript",
+        "React",
+        "PostgreSQL",
+        "Redis",
+        "Monorepo"
+      ]
+    },
+    {
       "name": "众筹合约",
-      "displayName": "OSS-FundQuest",
+      "displayName": "FundQuest",
       "summary": "去中心化众筹平台，创作者通过发行NFT来筹集资金。",
       "website": "https://sggmico.github.io",
       "githubUrl": "https://github.com/sggmico/fund-quest",
@@ -172,7 +188,7 @@
     },
     {
       "name": "DeFi衍生品交易平台",
-      "displayName": "OSS-HedgehogProtocol",
+      "displayName": "HedgehogProtocol",
       "summary": "智能对冲，新一代DeFi衍生品交易平台。",
       "website": "https://sggmico.github.io",
       "githubUrl": "https://github.com/sggmico/hedgehog-protocol",
@@ -193,7 +209,7 @@
       "summary": "端内春节H5会场，用于在春节期间提升站内留存的H5活动页，包括：玩法、内容、任务等模块。",
       "website": "https://sf2024.m.kuaishou.com/retain",
       "primaryLanguage": "TypeScript",
-      "skills": ["TypeScript", "Vue", "Pinia", "Monorepo架构"]
+      "skills": ["TypeScript", "Vue", "Pinia", "Monorepo"]
     },
     {
       "name": "H2编辑器",
@@ -202,13 +218,6 @@
       "website": "https://store.eqxiu.com/h2",
       "primaryLanguage": "TypeScript",
       "skills": ["TypeScript", "Angular", "No-Code"]
-    },
-    {
-      "name": "广告投放系统",
-      "displayName": "EQX-ADS",
-      "summary": "广告投放系统，主要服务于toC产品的广告接入，帮助公司和流量主实现广告变现。",
-      "primaryLanguage": "TypeScript",
-      "skills": ["TypeScript"]
     }
   ],
   "work": [
