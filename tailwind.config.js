@@ -12,7 +12,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-nunito-sans)', 'var(--font-noto-sans-sc)', 'system-ui', 'sans-serif'],
+        sans: [
+          "var(--font-nunito-sans)",
+          "var(--font-noto-sans-sc)",
+          "system-ui",
+          "sans-serif",
+        ],
       },
       colors: {
         "text-primary": "var(--text-primary)",
@@ -32,6 +37,22 @@ module.exports = {
         8: "8px",
         10: "10px",
       },
+      // keyframes: {
+      //   "slide-enter": {
+      //     "0%": {
+      //       opacity: "0",
+      //       transform: "translateY(1rem)",
+      //     },
+      //     "100%": {
+      //       opacity: "1",
+      //       transform: "translateY(0)",
+      //     },
+      //   },
+      // },
+      // animation: {
+      //   "slide-enter":
+      //     "slide-enter 0.8s ease-out forwards var(--slide-delay, 0s)",
+      // },
     },
   },
   plugins: [heroui()],

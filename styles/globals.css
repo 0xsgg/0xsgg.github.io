@@ -3,6 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 确保页面始终显示滚动条位置，避免布局偏移 */
+html {
+  overflow-y: scroll;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-rgb: 255, 255, 255;
@@ -12,16 +17,19 @@
   --text-primary-hover: #374151;
   --text-secondary: #666666;
   --text-secondary-hover: #333333;
+
+  --c-bg: #fff;
+  --c-scrollbar: #eee;
+  --c-scrollbar-hover: #bbb;
+  color-scheme: light dark
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+html.dark {
+  --c-bg: #050505;
+  --c-scrollbar: #111;
+  --c-scrollbar-hover: #222;
+  color-scheme: dark
 }
-
-
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -50,11 +58,125 @@
   }
 }
 
+/* 现代滚动条样式 */
+@layer utilities {
+  * {
+    scrollbar-width: thin;
+    border-radius: 5px;
+    scrollbar-color: var(--c-scrollbar) var(--c-bg)
+  }
+
+  /* 只有当用户没有要求减少动画时才添加动画 */
+  @media (prefers-reduced-motion: no-preference) {
+
+    @keyframes slide-enter {
+      0% {
+        transform: translateY(1rem);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    html:not(.no-sliding) [slide-enter],
+    html:not(.no-sliding) .slide-enter,
+    html:not(.no-sliding) .slide-enter-content>*:not(:has(.table-of-contents)) {
+      --enter-stage: 0;
+      --enter-step: 90ms;
+      --enter-initial: 0ms;
+      animation: slide-enter 1s both 1;
+      animation-delay: calc(var(--enter-initial) + var(--enter-stage) * var(--enter-step));
+    }
+
+    .slide-enter-content>*:nth-child(1) {
+      --enter-stage: 1 !important;
+    }
+
+    .slide-enter-content>*:nth-child(2) {
+      --enter-stage: 2 !important;
+    }
+
+    .slide-enter-content>*:nth-child(3) {
+      --enter-stage: 3 !important;
+    }
+
+    .slide-enter-content>*:nth-child(4) {
+      --enter-stage: 4 !important;
+    }
+
+    .slide-enter-content>*:nth-child(5) {
+      --enter-stage: 5 !important;
+    }
+
+    .slide-enter-content>*:nth-child(6) {
+      --enter-stage: 6 !important;
+    }
+
+    .slide-enter-content>*:nth-child(7) {
+      --enter-stage: 7 !important;
+    }
+
+    .slide-enter-content>*:nth-child(8) {
+      --enter-stage: 8 !important;
+    }
+
+    .slide-enter-content>*:nth-child(9) {
+      --enter-stage: 9 !important;
+    }
+
+    .slide-enter-content>*:nth-child(10) {
+      --enter-stage: 10 !important;
+    }
+
+    .slide-enter-content>*:nth-child(11) {
+      --enter-stage: 11 !important;
+    }
+
+    .slide-enter-content>*:nth-child(12) {
+      --enter-stage: 12 !important;
+    }
+
+    .slide-enter-content>*:nth-child(13) {
+      --enter-stage: 13 !important;
+    }
+
+    .slide-enter-content>*:nth-child(14) {
+      --enter-stage: 14 !important;
+    }
+
+    .slide-enter-content>*:nth-child(15) {
+      --enter-stage: 15 !important;
+    }
+
+    .slide-enter-content>*:nth-child(16) {
+      --enter-stage: 16 !important;
+    }
+
+    .slide-enter-content>*:nth-child(17) {
+      --enter-stage: 17 !important;
+    }
+
+    .slide-enter-content>*:nth-child(18) {
+      --enter-stage: 18 !important;
+    }
+
+    .slide-enter-content>*:nth-child(19) {
+      --enter-stage: 19 !important;
+    }
+
+    .slide-enter-content>*:nth-child(20) {
+      --enter-stage: 20 !important;
+    }
+  }
+}
+
 /* 在正常浏览时隐藏 print-only 元素 */
 .print-only {
   display: none;
 }
-
 
 /* PDF打印优化样式 */
 @media print {
@@ -75,10 +197,6 @@
     font-size: 10pt;
   }
 
-  body {
-    /* font-family: 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif !important; */
-  }
-
   .no-print {
     display: none;
   }
@@ -86,5 +204,4 @@
   .print-only {
     display: block;
   }
-
 }
