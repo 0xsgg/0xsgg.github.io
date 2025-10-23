@@ -8,7 +8,8 @@ html {
   overflow-y: scroll;
 }
 
-:root {
+:root,
+.light {
   --foreground-rgb: 0, 0, 0;
   --background-rgb: 255, 255, 255;
   /* Custom text color variables */
@@ -29,6 +30,11 @@ html.dark {
   --c-scrollbar: #111;
   --c-scrollbar-hover: #222;
   color-scheme: dark
+}
+
+/* Force light theme for resume pages */
+.light {
+  color-scheme: light !important;
 }
 
 @media (prefers-color-scheme: dark) {

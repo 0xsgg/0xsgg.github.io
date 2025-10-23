@@ -42,18 +42,18 @@ export default function HomePage() {
                     </Link>
                   )
                 })}
-              {
-                <button
-                  className="w-4 h-4 rounded-lg hover:bg-muted transition-colors opacity-60 hover:opacity-100 dark:opacity-80 dark:hover:opacity-100"
-                  onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-                >
-                  {theme === 'dark' ? (
+              {<button
+                className="w-4 h-4 rounded-lg hover:bg-muted transition-colors opacity-60 hover:opacity-100 dark:opacity-80 dark:hover:opacity-100"
+                onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+              >
+                {mounted ? (
+                  theme === 'dark' ? (
                     getCommonIcon('sun')
                   ) : (
                     getCommonIcon('moon')
-                  )}
-                </button>
-              }
+                  )
+                ) : null}
+              </button>}
             </div>
           </div>
         </div>
@@ -68,11 +68,11 @@ export default function HomePage() {
           <div className="space-y-4 max-w-2xl mx-auto text-text-primary opacity-90 text-sm text-muted-foreground slide-enter-content">
             {/* Hero Section */}
             <section>
-              我是 sggmico，一名前端开发工程师，正在向全栈Web3及开源开发工程师方向深耕。
+              我是 sggmico，一名前端开发工程师，正在向全栈Web3&开源开发工程师方向深耕。
             </section>
             {/* Work Information */}
             <section className="flex flex-wrap items-center gap-2 pt-4">
-              <span className="text-sm text-muted-foreground">Worked at</span>
+              <span className="text-sm text-muted-foreground font-medium">Worked at</span>
               <Chip
                 variant="flat"
                 size="sm"
@@ -106,18 +106,18 @@ export default function HomePage() {
             </section>
 
             <section className="flex flex-wrap items-center gap-2">
-              <span className="text-sm text-muted-foreground">Creator of</span>
+              <span className="text-sm text-muted-foreground font-medium">Creator of</span>
               <Chip variant="flat" size="sm" color="danger" className="font-bold">FundQuest</Chip>
               <Chip variant="flat" size="sm" color="warning" className="font-bold">HedgehogProtocol</Chip>
               <Chip variant="flat" size="sm" color="default" className="font-bold">SmartTrade</Chip>
             </section>
 
             <section className="flex flex-wrap items-center gap-2">
-              <span className="text-sm text-muted-foreground"><del>Core team of</del></span>
+              <span className="text-sm text-muted-foreground font-medium"><del>Core team of</del></span>
             </section>
 
             <section className="flex flex-wrap items-center gap-2">
-              <span className="text-sm text-muted-foreground">Maintained</span>
+              <span className="text-sm text-muted-foreground font-medium">Maintained</span>
               <Chip variant="flat" size="sm" color="success" className="font-bold">KS-Flow</Chip>
               <Chip variant="flat" size="sm" color="secondary" className="font-bold">KS-CNY2024</Chip>
               <Chip variant="flat" size="sm" color="success" className="font-bold">EQX-H2Editor</Chip>
