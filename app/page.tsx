@@ -5,6 +5,7 @@ import { Link, Chip } from '@heroui/react';
 import { useTheme } from 'next-themes';
 import { useState, useEffect } from 'react';
 import AnimatedLogo from '@/components/AnimatedLogo';
+import AnimatedBackground from '@/components/AnimatedBackground';
 import { getCommonIcon, getSocialIcon } from '@/lib/icons';
 import { getProfileUrl } from '@/lib/url';
 
@@ -19,9 +20,13 @@ export default function HomePage() {
   }, []);
 
   return (
-    <div className="h-screen bg-background flex flex-col overflow-auto">
+    <div className="h-screen bg-background flex flex-col overflow-auto relative">
+      {/* 动画背景 - 仅在主页显示 */}
+      <AnimatedBackground />
+
       {/* Header/Navigation */}
-      <header className="sticky top-0 z-50 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      {/* <header className="sticky top-0 z-50 w-full bg-background/60 backdrop-blur-sm supports-[backdrop-filter]:bg-background/20"> */}
+      <header className="sticky top-0 z-50 w-full">
         <div className="container flex w-full max-w-full h-14 items-center justify-end md:justify-between px-4 md:px-8">
           <div className="hidden md:flex items-center space-x-2">
             <AnimatedLogo />
@@ -68,7 +73,10 @@ export default function HomePage() {
           <div className="space-y-4 max-w-2xl mx-auto text-text-primary opacity-90 text-sm text-muted-foreground slide-enter-content">
             {/* Hero Section */}
             <section>
-              我是 sggmico，一名前端开发工程师，正在向全栈Web3&开源开发工程师方向深耕。
+              我是 sggmico，一名对技术充满兴趣的前端工程师，擅长TS / Node.js，Github爱好者。
+            </section>
+            <section>
+              此外，还对云服务、自动化、Web3等技术感兴趣，正在向全栈Web3方向深耕。
             </section>
             {/* Work Information */}
             <section className="flex flex-wrap items-center gap-2 pt-4">
@@ -107,9 +115,9 @@ export default function HomePage() {
 
             <section className="flex flex-wrap items-center gap-2">
               <span className="text-sm text-muted-foreground font-medium">Creator of</span>
+              <Chip variant="flat" size="sm" color="primary" className="font-bold">TradingKit</Chip>
               <Chip variant="flat" size="sm" color="danger" className="font-bold">FundQuest</Chip>
               <Chip variant="flat" size="sm" color="warning" className="font-bold">HedgehogProtocol</Chip>
-              <Chip variant="flat" size="sm" color="default" className="font-bold">SmartTrade</Chip>
             </section>
 
             <section className="flex flex-wrap items-center gap-2">

@@ -211,3 +211,31 @@ html.dark {
     display: block;
   }
 }
+
+/* 动画背景的三维抖动效果 */
+@keyframes gridShake {
+  0%, 100% { 
+    transform: perspective(1000px) rotateX(1deg) rotateY(0deg) translateZ(0px);
+  }
+  25% { 
+    transform: perspective(1000px) rotateX(1.5deg) rotateY(0.5deg) translateZ(2px);
+  }
+  50% { 
+    transform: perspective(1000px) rotateX(0.5deg) rotateY(-0.5deg) translateZ(-1px);
+  }
+  75% { 
+    transform: perspective(1000px) rotateX(2deg) rotateY(0.3deg) translateZ(1px);
+  }
+}
+
+@keyframes particleFloat {
+  0%, 100% { 
+    transform: translate(-50%, -50%) translateZ(0px) rotateZ(0deg);
+  }
+  33% { 
+    transform: translate(-50%, -50%) translateZ(5px) rotateZ(2deg);
+  }
+  66% { 
+    transform: translate(-50%, -50%) translateZ(-3px) rotateZ(-1deg);
+  }
+}
