@@ -72,14 +72,22 @@ export default function HomePage() {
         {mounted && (
           <div className="space-y-4 max-w-2xl mx-auto text-text-primary opacity-90 text-sm text-muted-foreground slide-enter-content">
             {/* Hero Section */}
-            <section>
-              我是 sggmico，一名对技术充满兴趣的前端工程师，擅长TS / Node.js，Github爱好者。
-            </section>
-            <section>
-              此外，还对云服务、自动化、Web3等技术感兴趣，正在向全栈Web3方向深耕。
+            <section className="h-6 flex items-center justify-center">
+              {/* Desktop version */}
+              <img
+                src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=21&duration=4200&pause=100&color=7E55F6&vCenter=true&width=1000&lines=%F0%9F%91%8B+Hi%EF%BC%8C%E6%88%91%E6%98%AF+sggmico%EF%BC%8C%E4%B8%80%E5%90%8D%E5%AF%B9%E6%8A%80%E6%9C%AF%E5%85%85%E6%BB%A1%E5%85%B4%E8%B6%A3%E7%9A%84%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%B8%88;%F0%9F%9B%A0%EF%B8%8F+%E6%93%85%E9%95%BFTS+%2F+Node.js%EF%BC%8CGithub%E7%88%B1%E5%A5%BD%E8%80%85;%F0%9F%9A%80+%E5%AF%B9%E4%BA%91%E6%9C%8D%E5%8A%A1%E3%80%81%E8%87%AA%E5%8A%A8%E5%8C%96%E3%80%81Web3%E7%AD%89%E6%8A%80%E6%9C%AF%E6%84%9F%E5%85%B4%E8%B6%A3;%F0%9F%93%9A+%E6%AD%A3%E5%9C%A8%E5%90%91%E5%85%A8%E6%A0%88Web3%E6%96%B9%E5%90%91%E6%B7%B1%E8%80%95%EF%BC%8C%E6%AC%A2%E8%BF%8E%E4%B8%80%E8%B5%B7%E4%BA%A4%E6%B5%81%E5%AD%A6%E4%B9%A0~"
+                alt="Typing SVG"
+                className="hidden md:block"
+              />
+              {/* Mobile version */}
+              <img
+                src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=32&duration=4200&pause=100&color=7E55F6&vCenter=true&width=1000&lines=%F0%9F%91%8B+Hi%EF%BC%8C%E6%88%91%E6%98%AF+sggmico%EF%BC%8C%E4%B8%80%E5%90%8D%E5%AF%B9%E6%8A%80%E6%9C%AF%E5%85%85%E6%BB%A1%E5%85%B4%E8%B6%A3%E7%9A%84%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%B8%88;%F0%9F%9B%A0%EF%B8%8F+%E6%93%85%E9%95%BFTS+%2F+Node.js%EF%BC%8CGithub%E7%88%B1%E5%A5%BD%E8%80%85;%F0%9F%9A%80+%E5%AF%B9%E4%BA%91%E6%9C%8D%E5%8A%A1%E3%80%81%E8%87%AA%E5%8A%A8%E5%8C%96%E3%80%81Web3%E7%AD%89%E6%8A%80%E6%9C%AF%E6%84%9F%E5%85%B4%E8%B6%A3;%F0%9F%93%9A+%E6%AD%A3%E5%9C%A8%E5%90%91%E5%85%A8%E6%A0%88Web3%E6%96%B9%E5%90%91%E6%B7%B1%E8%80%95%EF%BC%8C%E6%AC%A2%E8%BF%8E%E4%B8%80%E8%B5%B7%E4%BA%A4%E6%B5%81%E5%AD%A6%E4%B9%A0~"
+                alt="Typing SVG"
+                className="block md:hidden"
+              />
             </section>
             {/* Work Information */}
-            <section className="flex flex-wrap items-center gap-2 pt-4">
+            <section className="flex flex-wrap items-center gap-2 pt-2">
               <span className="text-sm text-muted-foreground font-medium">Worked at</span>
               <Chip
                 variant="flat"
