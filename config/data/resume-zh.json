@@ -188,10 +188,10 @@
     },
     {
       "name": "DeFi衍生品交易平台",
-      "displayName": "HedgehogProtocol",
+      "displayName": "Hedgehog",
       "summary": "智能对冲，新一代DeFi衍生品交易平台。",
       "website": "https://sggmico.github.io",
-      "githubUrl": "https://github.com/sggmico/hedgehog-protocol",
+      "githubUrl": "https://github.com/sggmico/hedgehog",
       "primaryLanguage": "TypeScript",
       "skills": ["React", "Wagmi", "Solidity", "Optimism", "Chainlink", "Pyth"]
     },

@@ -125,7 +125,7 @@ export default function HomePage() {
               <span className="text-sm text-muted-foreground font-medium">Creator of</span>
               <Chip variant="flat" size="sm" color="primary" className="font-bold">TradingKit</Chip>
               <Chip variant="flat" size="sm" color="danger" className="font-bold">FundQuest</Chip>
-              <Chip variant="flat" size="sm" color="warning" className="font-bold">HedgehogProtocol</Chip>
+              <Chip variant="flat" size="sm" color="warning" className="font-bold">Hedgehog</Chip>
             </section>
 
             <section className="flex flex-wrap items-center gap-2">
