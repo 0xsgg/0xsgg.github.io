@@ -4,7 +4,7 @@
     "picture": "https://sggmico.me/avatar.png",
     "label": "Software Engineer",
     "headline": "A ship in harbor is safe, but that is not what ships are built for.",
-    "summary": "I'm sggmico, a frontend developer advancing towards becoming a full-stack Web3 engineer.\n\nWith 10+ years of frontend development experience and 3+ years of practical experience at major internet companies, I have a solid foundation in frontend technologies, am well-versed in web development architecture, and proficient in mainstream development frameworks and open-source ecosystems.\n\nWith 2+ years of deep expertise in Web3, I'm familiar with blockchain fundamentals and Ethereum technology, with deep understanding of decentralization and digital assets. I'm proficient in Solidity smart contract development and master the complete contract development lifecycle (development, testing, deployment, maintenance). I'm familiar with ERC standards (ERC20/721/1155) and security contract libraries like OpenZeppelin, with blockchain security awareness. I've participated in NFT ecosystem development with complete experience from NFT generation, rarity processing to contract deployment and marketplace listing.\n\nI possess agile project management capabilities, ensuring code quality and efficient iteration through automated testing, code reviews, and CI/CD practices. I excel at breaking down complex problems and transforming them into actionable technical solutions, and am skilled in technical challenges and process automation.\n\nI'm passionate about creating user-friendly and beautiful interface experiences, pursuing a balance between usability and design aesthetics. I actively participate in the open-source community, continuously follow technology trends, and enjoy exploring new tools and cutting-edge technologies.",
+    "summary": "I'm sggmico, a frontend engineer with over 10 years of experience. I've helped build complex systems at major internet companies, with deep, hands-on practice in web architecture, engineering processes, and performance optimization.\n\nI'm fluent in modern frontend stacks and care about code quality and long-term maintainability. I focus on building clear, stable, and easy-to-iterate systems, and I rely on automated testing, code reviews, and CI/CD to ensure delivery quality.\n\nOver the past two years, I've focused on Web3, with a solid understanding of blockchain and the Ethereum stack. I have end-to-end smart contract experience, am comfortable with Solidity and ERC standards, and have delivered NFT projects from generation and design through deployment and launch.\n\nI'm also exploring practical uses of AI in development and products, from using large language models to boost engineering efficiency to building AI-assisted tools and workflows. I care about how AI can improve individual and team productivity.\n\nI believe technology should serve people. I value product experience and design, stay active in open source, follow industry trends, and keep learning with curiosity.",
     "website": "https://sggmico.github.io",
     "address": "",
     "projects_url": "https://sggmico.me/projects",
@@ -154,6 +154,22 @@
   ],
   "projects": [
     {
+      "name": "AI Agent Workflow Framework",
+      "displayName": "AgentFlow",
+      "summary": "An AI agent workflow platform for developers to quickly build composable task chains and tool coordination.",
+      "website": "https://github.com/sggmico/agent-flow",
+      "githubUrl": "https://github.com/sggmico/agent-flow",
+      "primaryLanguage": "TypeScript",
+      "skills": [
+        "TypeScript",
+        "Node.js",
+        "React",
+        "Mastra",
+        "Supabase",
+        "Monorepo"
+      ]
+    },
+    {
       "name": "Cryptocurrency quantitative trading platform",
       "displayName": "TradingKit",
       "summary": "A lightweight, user-friendly, and fully functional cryptocurrency quantitative trading platform.",
@@ -167,23 +183,6 @@
         "PostgreSQL",
         "Redis",
         "Monorepo"
-      ]
-    },
-    {
-      "name": "Crowdfunding Contract",
-      "displayName": "FundQuest",
-      "summary": "A decentralized crowdfunding platform where creators raise funds through NFT issuance.",
-      "website": "https://sggmico.github.io",
-      "githubUrl": "https://github.com/sggmico/fund-quest",
-      "primaryLanguage": "TypeScript",
-      "skills": [
-        "React",
-        "Wagmi",
-        "Solidity",
-        "Foundry",
-        "Optimism",
-        "Chainlink",
-        "Pyth"
       ]
     },
     {
@@ -234,8 +233,9 @@
       },
       "end": {},
       "highlights": [
-        "Decentralized crowdfunding platform where creators raise funds through NFT issuance.",
-        "Smart hedging next-generation DeFi derivatives trading platform."
+        "Composable AI agent workflow platform for task orchestration.",
+        "Multi-exchange intelligent quantitative trading system.",
+        "Intelligent hedging DeFi derivatives trading platform."
       ]
     },
     {
