@@ -75,7 +75,7 @@ export default function HomePage() {
             <section className="h-6 flex items-center justify-center">
               {/* Desktop version */}
               <img
-                src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=21&duration=4200&pause=100&color=7E55F6&vCenter=true&width=1000&lines=%F0%9F%91%8B+Hi%EF%BC%8C%E6%88%91%E6%98%AF+sggmico%EF%BC%8C%E4%B8%80%E5%90%8D%E5%AF%B9%E6%8A%80%E6%9C%AF%E5%85%85%E6%BB%A1%E5%85%B4%E8%B6%A3%E7%9A%84%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%B8%88;%F0%9F%9B%A0%EF%B8%8F+%E6%93%85%E9%95%BFTS+%2F+Node.js%EF%BC%8CGithub%E7%88%B1%E5%A5%BD%E8%80%85;%F0%9F%9A%80+%E5%AF%B9%E4%BA%91%E6%9C%8D%E5%8A%A1%E3%80%81%E8%87%AA%E5%8A%A8%E5%8C%96%E3%80%81Web3%E7%AD%89%E6%8A%80%E6%9C%AF%E6%84%9F%E5%85%B4%E8%B6%A3;%F0%9F%93%9A+%E6%AD%A3%E5%9C%A8%E5%90%91%E5%85%A8%E6%A0%88Web3%E6%96%B9%E5%90%91%E6%B7%B1%E8%80%95%EF%BC%8C%E6%AC%A2%E8%BF%8E%E4%B8%80%E8%B5%B7%E4%BA%A4%E6%B5%81%E5%AD%A6%E4%B9%A0~"
+                src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=21&duration=4200&pause=100&color=7E55F6&vCenter=true&width=1000&lines=%F0%9F%91%8B+Hi%EF%BC%8C%E6%88%91%E6%98%AF+sggmico%EF%BC%8C%E4%B8%80%E5%90%8D%E5%AF%B9%E6%8A%80%E6%9C%AF%E5%85%85%E6%BB%A1%E5%85%B4%E8%B6%A3%E7%9A%84%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%B8%88;%F0%9F%9B%A0%EF%B8%8F+%E6%93%85%E9%95%BFTS+%2F+Node.js%EF%BC%8CGithub%E7%88%B1%E5%A5%BD%E8%80%85;%F0%9F%9A%80+%E5%AF%B9Web3%E3%80%81AI%E6%8F%90%E6%95%88%E3%80%81%E8%87%AA%E5%8A%A8%E5%8C%96%E3%80%81%E4%BA%91%E6%9C%8D%E5%8A%A1%E7%AD%89%E6%8A%80%E6%9C%AF%E6%84%9F%E5%85%B4%E8%B6%A3;%F0%9F%93%9A+%E6%AD%A3%E5%9C%A8%E5%90%91%E5%85%A8%E6%A0%88Web3%E6%96%B9%E5%90%91%E6%B7%B1%E8%80%95%EF%BC%8C%E6%AC%A2%E8%BF%8E%E4%B8%80%E8%B5%B7%E4%BA%A4%E6%B5%81%E5%AD%A6%E4%B9%A0~"
                 alt="Typing SVG"
                 className="hidden md:block"
               />
@@ -123,14 +123,15 @@ export default function HomePage() {
 
             <section className="flex flex-wrap items-center gap-2">
               <span className="text-sm text-muted-foreground font-medium">Creator of</span>
+              <Chip variant="flat" size="sm" color="secondary" className="font-bold">AgentFlow</Chip>
               <Chip variant="flat" size="sm" color="primary" className="font-bold">TradingKit</Chip>
               <Chip variant="flat" size="sm" color="danger" className="font-bold">FundQuest</Chip>
               <Chip variant="flat" size="sm" color="warning" className="font-bold">Hedgehog</Chip>
             </section>
 
-            <section className="flex flex-wrap items-center gap-2">
+            {/* <section className="flex flex-wrap items-center gap-2">
               <span className="text-sm text-muted-foreground font-medium"><del>Core team of</del></span>
-            </section>
+            </section> */}
 
             <section className="flex flex-wrap items-center gap-2">
               <span className="text-sm text-muted-foreground font-medium">Maintained</span>
@@ -142,27 +143,35 @@ export default function HomePage() {
 
             {/* About Section */}
             <section className="pt-4 pb-2">
-              拥有10+年前端开发经验，3+年大型互联网公司实战经历。前端基础扎实，熟悉Web开发体系架构，精通主流开发框架与开源生态。
+              一名<strong className="font-semibold text-text-primary">十多年经验</strong>的前端工程师，在<strong className="font-semibold text-text-primary">大型互联网公司</strong>参与过<strong className="font-semibold text-text-primary">复杂系统</strong>的搭建，长期专注于 <strong className="font-semibold text-text-primary">Web 架构、工程体系和性能优化</strong>。
               <Link href="/projects" className="text-text-primary hover:text-text-primary-hover underline underline-offset-4 decoration-dashed decoration-1 inline-flex items-center gap-1 mx-1 text-sm">
                 在此
               </Link>可查看到我的全部项目列表。
             </section>
-
             <section className="pb-2">
-              在Web3领域深耕2+年，熟悉区块链底层原理与Ethereum技术体系，对去中心化和数字资产有深度理解。熟练使用Solidity开发智能合约，掌握完整的合约开发生命周期（开发、测试、部署、维护）。熟悉ERC标准（ERC20/721/1155）及OpenZeppelin等安全合约库，具备区块链安全认知。参与过NFT生态建设，拥有从NFT生成、稀有度处理到合约部署上架的完整经验。
+              习惯用<strong className="font-semibold text-text-primary">清晰的代码</strong>和<strong className="font-semibold text-text-primary">稳定的设计</strong>来做东西，不仅关注功能实现，更在意系统以后好不好<strong className="font-semibold text-text-primary">扩展</strong>、团队能不能<strong className="font-semibold text-text-primary">高效协作</strong>。日常工作中，会通过<strong className="font-semibold text-text-primary">自动化测试、Code Review和 CI/CD</strong>来平衡<strong className="font-semibold text-text-primary">效率和质量</strong>，也乐于把<strong className="font-semibold text-text-primary">复杂问题拆解成可执行的方案</strong>，推动项目<strong className="font-semibold text-text-primary">持续迭代</strong>。
             </section>
 
             <section className="pb-2">
-              具备敏捷项目管理能力，通过自动化测试、Code Review、CI/CD等实践保障代码质量与高效迭代。擅长拆解复杂问题并转化为可落地的技术方案，善于技术攻坚与流程自动化。
+              最近<strong className="font-semibold text-text-primary">两年</strong>投入在 <strong className="font-semibold text-text-primary">Web3</strong> 领域，对<strong className="font-semibold text-text-primary">区块链</strong>和 <strong className="font-semibold text-text-primary">Ethereum 技术栈</strong>有比较深的理解，能熟练使用 <strong className="font-semibold text-text-primary">Solidity</strong> 开发<strong className="font-semibold text-text-primary">智能合约</strong>，覆盖从设计、开发到部署维护的<strong className="font-semibold text-text-primary">全流程</strong>，也实践过 <strong className="font-semibold text-text-primary">NFT 项目的完整落地</strong>。
             </section>
 
             <section className="pb-2">
-              热衷于打造用户友好且美观的界面体验，追求易用性与设计感的平衡。积极参与开源社区，持续关注技术趋势，乐于探索新工具与前沿技术。
+              同时，也一直在尝试把 <strong className="font-semibold text-text-primary">AI</strong> 用在日常开发和产品里，比如用<strong className="font-semibold text-text-primary">大模型辅助编码</strong>、搭建<strong className="font-semibold text-text-primary">自动化工作流</strong>等等——关心的不是追热点，而是 AI 能不能真正帮我们<strong className="font-semibold text-text-primary">提效、省成本</strong>。
+            </section>
+
+            <section className="pb-2">
+              喜欢做<strong className="font-semibold text-text-primary">有设计感、对用户友好</strong>的产品，平时也常参与<strong className="font-semibold text-text-primary">开源</strong>、关注<strong className="font-semibold text-text-primary">新技术</strong>，始终对技术保持一份<strong className="font-semibold text-text-primary">好奇和敬畏</strong>。
+            </section>
+
+            <section className="pb-2">
+              如果你在找一位<strong className="font-semibold text-text-primary">理解业务、重视工程、也愿意长期合作</strong>的伙伴，欢迎<strong className="font-semibold text-text-primary">随时聊聊</strong> 👋
             </section>
 
             <section className="pb-2">
               想了解更多，欢迎到 <Link href="/resume/zh" className="text-text-primary hover:text-text-primary-hover underline underline-offset-4 decoration-dashed decoration-1 inline-flex items-center gap-1 mx-1 text-sm"> 中文 </Link> / <Link href="/resume/en" className="text-text-primary hover:text-text-primary-hover underline underline-offset-4 decoration-dashed decoration-1 inline-flex items-center gap-1 mx-1 text-sm">EN</Link> 页面查看。
             </section>
+
 
             {/* Find me on Card */}
             <section className="grid gap-3 pt-4">
