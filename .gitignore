@@ -11,6 +11,10 @@
 /.next/
 /out/
 
+# open-next / cloudflare
+/.open-next/
+/.wrangler/
+
 
 # demo
 /demo/
