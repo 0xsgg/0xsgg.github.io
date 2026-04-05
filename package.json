@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build",
+    "build": "npm run build:static && npm run generate-pdf",
     "build:static": "next build",
     "fix-css-paths": "node scripts/fix-css-paths.js",
     "generate-pdf": "node scripts/generate-pdf.js",

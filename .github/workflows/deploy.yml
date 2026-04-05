@@ -28,14 +28,15 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
+          cache: pnpm
       - name: Setup PNPM
-        uses: pnpm/action-setup@v2
-        with:
-          version: '10.7.0'
+        uses: pnpm/action-setup@v4
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Install dependencies
         run: pnpm install
+      - name: Lint
+        run: pnpm lint
       - name: Build with Next.js
         run: pnpm build
       - name: Upload artifact
