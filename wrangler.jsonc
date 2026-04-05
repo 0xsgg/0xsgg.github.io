@@ -1,5 +1,10 @@
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "sggmico-github-io",
-	"pages_build_output_dir": "out"
+	"name": "sm-site",
+	"compatibility_date": "2026-04-05",
+	"assets": {
+		"directory": "./out",
+		"not_found_handling": "404-page",
+		"html_handling": "auto-trailing-slash"
+	}
 }
