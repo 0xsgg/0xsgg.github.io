@@ -33,9 +33,6 @@ importers:
       '@eslint/eslintrc':
         specifier: ^3
         version: 3.3.1
-      '@sparticuz/chromium':
-        specifier: ^138.0.2
-        version: 138.0.2
       '@tailwindcss/postcss':
         specifier: ^4
         version: 4.1.4
@@ -66,9 +63,6 @@ importers:
       prettier:
         specifier: ^3.5.3
         version: 3.5.3
-      puppeteer-core:
-        specifier: ^24.22.3
-        version: 24.22.3
       tailwindcss:
         specifier: '3.4'
         version: 3.4.17
