@@ -9,7 +9,7 @@ import AnimatedBackground from '@/components/AnimatedBackground';
 import { getCommonIcon, getSocialIcon } from '@/lib/icons';
 import { getProfileUrl } from '@/lib/url';
 
-import { basics, navList } from "@/config/data/resume-en.json"
+import { basics, navList } from "@/config/data/home"
 
 export default function HomePage() {
   const { theme, setTheme } = useTheme();
@@ -169,7 +169,7 @@ export default function HomePage() {
             </section>
 
             <section className="pb-2">
-              想了解更多，欢迎到 <Link href="/resume/zh" className="text-text-primary hover:text-text-primary-hover underline underline-offset-4 decoration-dashed decoration-1 inline-flex items-center gap-1 mx-1 text-sm"> 中文 </Link> / <Link href="/resume/en" className="text-text-primary hover:text-text-primary-hover underline underline-offset-4 decoration-dashed decoration-1 inline-flex items-center gap-1 mx-1 text-sm">EN</Link> 页面查看。
+              想了解更多，欢迎到 <Link href="https://resume.nosweetsm.cn/" isExternal className="text-text-primary hover:text-text-primary-hover underline underline-offset-4 decoration-dashed decoration-1 inline-flex items-center gap-1 mx-1 text-sm"> 中文 </Link> / <Link href="https://resume.nosweetsm.cn/en" isExternal className="text-text-primary hover:text-text-primary-hover underline underline-offset-4 decoration-dashed decoration-1 inline-flex items-center gap-1 mx-1 text-sm">EN</Link> 简历页面查看。
             </section>
 
 

@@ -32,7 +32,7 @@ html.dark {
   color-scheme: dark
 }
 
-/* Force light theme for resume pages */
+/* Explicit light theme override */
 .light {
   color-scheme: light !important;
 }
